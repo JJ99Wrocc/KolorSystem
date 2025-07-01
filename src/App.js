@@ -1,16 +1,22 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import NavbarWeb from "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarMobile from "./components/NavbarMobile";
 import Headers from "./components/Header";
 
 
+
+
 function App() {
   return (
     <div className="App">
-      <NavbarWeb  />
-      <NavbarMobile />
-      <Headers />
+         <BrowserRouter basename="/KolorSystem">
+            <NavbarWeb  />
+            <NavbarMobile />
+            <Headers />
+        </BrowserRouter>
+      
     </div>
   );
 }
