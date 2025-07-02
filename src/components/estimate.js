@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../Firebase";
-db.collection('users')  
-console.log("Importowany db:", db);
+
 const Estimate = () => {
   const [phone, setPhone] = useState("");
   const [isPhoneValid, setIsPhoneValid] = useState(false);
@@ -40,7 +39,7 @@ const Estimate = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submit clicked");
-  
+    alert("Submit clicked");
     if (
       !isNameValid ||
       !isEmailValid ||
@@ -53,7 +52,7 @@ const Estimate = () => {
       alert("Uzupełnij poprawnie wszystkie pola i zaakceptuj zgodę.");
       return;
     }
-  
+
     const dataToSend = {
       name,
       email,
@@ -65,13 +64,11 @@ const Estimate = () => {
       isConsentGiven,
       timestamp: new Date(),
     };
-  
+
     try {
-      console.log("Wysyłam dane do Firestore...", dataToSend);
-       await addDoc(collection(db, "estimates"), dataToSend);
-    //   console.log("Dokument zapisany z ID:", docRef.id);
+      await addDoc(collection(db, "estimates"), dataToSend);
       alert("Formularz wysłany pomyślnie!");
-  
+
       // Czyszczenie formularza
       setName("");
       setIsNameValid(false);
@@ -86,11 +83,18 @@ const Estimate = () => {
       setWybor2("");
       setIsConsentGiven(false);
     } catch (error) {
-      console.error("Błąd wysyłania:", error);
       alert("Błąd wysyłania: " + error.message);
     }
+    async function sendData(data) {
+        try {
+          const docRef = await addDoc(collection(db, "estimates"), data);
+          console.log("Dokument zapisany z ID:", docRef.id);
+        } catch (error) {
+          console.error("Błąd zapisu dokumentu:", error);
+        }
+      }
   };
-  
+
   return (
     <div className="estimate-box">
       <div className="estimate-img">
