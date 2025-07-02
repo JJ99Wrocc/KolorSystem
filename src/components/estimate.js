@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../Firebase";
+import emailjs from 'emailjs-com';
 
 const Estimate = () => {
   const [phone, setPhone] = useState("");
@@ -35,7 +36,20 @@ const Estimate = () => {
     const phoneRegex = /^[0-9]{9}$/;
     setIsPhoneValid(phoneRegex.test(value));
   };
-
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    moreInformation: '',
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+  const handle = handleChange;
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submit clicked");
@@ -93,6 +107,23 @@ const Estimate = () => {
           console.error("Błąd zapisu dokumentu:", error);
         }
       }
+      const templateParams = {
+        name: name,
+        email: email,
+        phone: phone,
+        message: moreInformation,  
+      };
+    await  emailjs.send(
+        "service_6clsdqg",
+        "template_t33wcuk",
+        templateParams,
+        "b0kSQQdQ70kSaSPcg"
+      ).then((result) => {
+          console.log("E-mail wysłany!", result.text);
+          // możesz dodać np. alert("Dziękujemy za kontakt!")
+      }, (error) => {
+          console.error("Błąd wysyłania e-maila:", error);
+      });
   };
 
   return (
@@ -129,6 +160,7 @@ const Estimate = () => {
                 const newName = e.target.value;
                 setName(newName);
                 validateName(newName);
+          
               }}
             />
             {!isNameValid && name.length > 0 && (
@@ -174,7 +206,7 @@ const Estimate = () => {
                 const newAddress = e.target.value;
                 setAddress(newAddress);
                 addressValid(newAddress);
-              }}
+                          }}
             />
             {!isAddressValid && address.length > 0 && (
               <p className="error-name">Wpisz poprawny adres</p>
@@ -185,8 +217,9 @@ const Estimate = () => {
               placeholder="Powiedz nam coś więcej o Twojej nieruchomości"
               className="estimate-input"
               value={moreInformation}
-              onChange={(e) => setMoreInformation(e.target.value)}
-            />
+              onChange={(e) => {setMoreInformation(e.target.value)
+                          }
+                         } />
           </div>
 
           <div className="estimate-form-right-box">
@@ -198,7 +231,9 @@ const Estimate = () => {
                   name="wybor"
                   value="dom"
                   checked={wybor === "dom"}
-                  onChange={(e) => setWybor(e.target.value)}
+                  onChange={(e) => {setWybor(e.target.value)
+                    }
+                  }
                 />
                 Dom
               </label>
@@ -210,7 +245,9 @@ const Estimate = () => {
                   name="wybor"
                   value="mieszkanie"
                   checked={wybor === "mieszkanie"}
-                  onChange={(e) => setWybor(e.target.value)}
+                  onChange={(e) => {setWybor(e.target.value)
+                    }
+                  }
                 />
                 Mieszkanie
               </label>
@@ -222,7 +259,9 @@ const Estimate = () => {
                   name="wybor"
                   value="lokal"
                   checked={wybor === "lokal"}
-                  onChange={(e) => setWybor(e.target.value)}
+                  onChange={(e) => {setWybor(e.target.value)
+                    }
+                  }
                 />
                 Lokal usługowy/ użytkowy
               </label>
@@ -234,13 +273,15 @@ const Estimate = () => {
                   name="wybor"
                   value="inne"
                   checked={wybor === "inne"}
-                  onChange={(e) => setWybor(e.target.value)}
+                  onChange={(e) => {setWybor(e.target.value)
+                    }
+                  }
                 />
                 Inne
               </label>
             </div>
 
-            <p>Skąd się o nas dowiedziałeś?</p>
+            <p className="pp">Skąd się o nas dowiedziałeś?</p>
             <div>
               <label className="estimate-input-right">
                 <input
@@ -248,7 +289,9 @@ const Estimate = () => {
                   name="zrodlo"
                   value="polecenie"
                   checked={wybor2 === "polecenie"}
-                  onChange={(e) => setWybor2(e.target.value)}
+                  onChange={(e) => {setWybor2(e.target.value)
+                 }
+                  }
                 />
                 z polecenia
               </label>
@@ -260,7 +303,9 @@ const Estimate = () => {
                   name="zrodlo"
                   value="internet"
                   checked={wybor2 === "internet"}
-                  onChange={(e) => setWybor2(e.target.value)}
+                  onChange={(e) => {setWybor2(e.target.value)
+                    }
+                  }
                 />
                 znalazłem Was w Internecie
               </label>
@@ -272,7 +317,9 @@ const Estimate = () => {
                   name="zrodlo"
                   value="widzialem"
                   checked={wybor2 === "widzialem"}
-                  onChange={(e) => setWybor2(e.target.value)}
+                  onChange={(e) => {setWybor2(e.target.value)
+                  }
+                  }
                 />
                 widziałem Was podczas pracy
               </label>
@@ -284,7 +331,9 @@ const Estimate = () => {
                 name="zgoda"
                 value="check"
                 checked={isConsentGiven}
-                onChange={(e) => setIsConsentGiven(e.target.checked)}
+                onChange={(e) => {setIsConsentGiven(e.target.checked)
+                    }
+                }
               />
               Niniejszym, wyrażam zgodę na gromadzenie i przetwarzanie moich
               danych osobowych przez KolorSystem w celu przesyłania mi na adres

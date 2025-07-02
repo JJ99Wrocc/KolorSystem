@@ -6,9 +6,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import kolorsystem from '../img/kolorsystem.png'
+import { useNavigate } from 'react-router-dom';
 function NavbarMobile() {
   const expand = 'lg'; // działa dla < 992px
-
+  const navigate = useNavigate();
   return (
     <Navbar fixed="top" expand={expand} className="d-block d-lg-none nav-mobile">
       <Container fluid>
@@ -35,8 +36,8 @@ function NavbarMobile() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3 ">
-              <Nav.Link className='nav-links-mobile' href="#home">O nas</Nav.Link>
-              <Nav.Link className='nav-links-mobile' href="#about">Wycena</Nav.Link>
+              <Nav.Link className='nav-links-mobile'   href="#home">O nas</Nav.Link>
+              <Nav.Link className='nav-links-mobile' onClick={(e) =>{navigate("/estimate")}} href="#about">Wycena</Nav.Link>
               <Nav.Link className='nav-links-mobile' href="#contact">Kontakt</Nav.Link>
               <NavDropdown title="Usługi" id="nav-dropdown">
                 <NavDropdown.Item href="#one">One</NavDropdown.Item>

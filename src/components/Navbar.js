@@ -5,8 +5,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import kolorsystem from '../img/kolorsystem.png'
+import { useNavigate } from "react-router-dom";
 
 function NavbarWeb() {
+  const navigate = useNavigate();
   return (
     <Navbar fixed="top" data-bs-theme="light" className='d-none d-lg-block navbar-web container-fluid'>
       <Container className="d-flex justify-content-between align-items-center">
@@ -22,7 +24,7 @@ function NavbarWeb() {
                 <NavDropdown.Item href="#two">Two</NavDropdown.Item>
               </NavDropdown>
           <Nav.Link href="#home">O nas</Nav.Link>
-          <Nav.Link href="#features">Wycena</Nav.Link>
+          <Nav.Link onClick={(e) => navigate("/estimate")} href="#features">Wycena</Nav.Link>
           <Nav.Link href="#pricing">Kontakt</Nav.Link>
         </Nav>
       </Container>

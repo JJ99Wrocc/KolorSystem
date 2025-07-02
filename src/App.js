@@ -36,6 +36,7 @@ function AppRoutes(){
           <Estimate />
         </LayoutWithNavAndFooter>
       } />
+
     </Routes>
   )
 }
