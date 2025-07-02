@@ -4,6 +4,7 @@ import NavbarWeb from "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarMobile from "./components/NavbarMobile";
 import Headers from "./components/Header";
+import OrderEstimate from "./components/OrderEstimate";
 
 
 
@@ -15,6 +16,7 @@ function App() {
             <NavbarWeb  />
             <NavbarMobile />
             <Headers />
+            <OrderEstimate />
         </BrowserRouter>
       
     </div>
