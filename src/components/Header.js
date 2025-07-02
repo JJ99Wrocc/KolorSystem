@@ -5,8 +5,9 @@ import headerimg from '../img/headerimg.png'
 const Headers = () => {
 
     return( 
-        <div>
+        <div className="wrapper">
             <img className="header-img lg-none" src={headerimg}></img>
+            <div className="header-img-shadow"></div>
         </div>
     )
 }

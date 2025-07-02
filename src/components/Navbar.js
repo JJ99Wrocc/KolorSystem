@@ -8,7 +8,7 @@ import kolorsystem from '../img/kolorsystem.png'
 
 function NavbarWeb() {
   return (
-    <Navbar fixed="top" data-bs-theme="light" className='d-none d-lg-block navbar-web'>
+    <Navbar fixed="top" data-bs-theme="light" className='d-none d-lg-block navbar-web container-fluid'>
       <Container className="d-flex justify-content-between align-items-center">
         <Navbar.Brand className='navbar' href="#home">
           
