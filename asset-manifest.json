@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.1d1d5e4c.css",
-    "main.js": "/KolorSystem/static/js/main.dc7f8797.js",
+    "main.css": "/KolorSystem/static/css/main.683940ce.css",
+    "main.js": "/KolorSystem/static/js/main.549aad61.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
     "static/media/Headerxxl.png": "/KolorSystem/static/media/Headerxxl.9de84bab2cfda5110740.png",
     "static/media/headerimg.png": "/KolorSystem/static/media/headerimg.92054990ddd9fc8fcebc.png",
@@ -12,13 +12,14 @@
     "static/media/happycliente.png": "/KolorSystem/static/media/happycliente.a07bf697797733c1c825.png",
     "static/media/wroclaw.jpg": "/KolorSystem/static/media/wroclaw.b57c5d2bced7ca543290.jpg",
     "static/media/estimate1200px.jpg": "/KolorSystem/static/media/estimate1200px.7050003cd5a637106f0b.jpg",
+    "static/media/malowanie1.jpg": "/KolorSystem/static/media/malowanie1.86b7af8d2626bffffebe.jpg",
     "index.html": "/KolorSystem/index.html",
-    "main.1d1d5e4c.css.map": "/KolorSystem/static/css/main.1d1d5e4c.css.map",
-    "main.dc7f8797.js.map": "/KolorSystem/static/js/main.dc7f8797.js.map",
+    "main.683940ce.css.map": "/KolorSystem/static/css/main.683940ce.css.map",
+    "main.549aad61.js.map": "/KolorSystem/static/js/main.549aad61.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d1d5e4c.css",
-    "static/js/main.dc7f8797.js"
+    "static/css/main.683940ce.css",
+    "static/js/main.549aad61.js"
   ]
 }
