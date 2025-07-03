@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
 import WhyUs from "./components/WhyUs";
 import Picture from "./components/picture";
+import MySwiper from "./components/MySwiper";
 
 function LayoutWithNavAndFooter({ children }) {
   return (
@@ -32,6 +33,7 @@ function AppRoutes(){
             <OrderEstimate />
             <WhyUs />
             <Picture />
+            <MySwiper />
           </LayoutWithNavAndFooter>
         }
       />
