@@ -27,7 +27,7 @@ code {
 /* WSP */
 
 .footer{
-  height: 40px;
+  height: 50px;
 }
 .Copy-right{
   position: absolute;
@@ -101,6 +101,9 @@ code {
 .navbar-toggler.collapsed{
   font-size: 17px;
 }
+.navbar-toggler{
+  background-color: #fff;
+}
 .sticky-nav{
   position: fixed;
   top: 0;
@@ -124,7 +127,7 @@ code {
   display: block;
   background-size: contain;
 }
-.header-img-shadow,.estimate-img-shadow {
+.header-img-shadow,.estimate-img-shadow, .picture-img-shadow {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -163,7 +166,7 @@ code {
   left: 68%;
   transform: translate(-70%,-50%);
 }
-.order-estimate-right-sub, .order-estimate-left-sub{
+.order-estimate-right-sub, .order-estimate-left-sub, .why-us-title{
   font-family: 'Almendra Display', serif;
   font-size: 25px;
   color:  navajowhite;
@@ -196,6 +199,7 @@ code {
 .estimate-title-p{
   padding-top: 20px;
   font-size: 20px;
+  font-weight: bold;
   
 }
 .estimate-p{
@@ -246,6 +250,62 @@ code {
   font-size: 8px;
   color: red;
 }
+.why-us-title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #1a1a2e  ;
+  margin: 20px 0 20px 0;
+}
+.line{
+  color: 2px solid #1a1a2e;
+  margin: 10px auto;
+  width: 10%;
+}
+.why-us-row{
+  text-align: center;
+  margin: 10px 0 25px 0;
+}
+.why-us-segment{
+  box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.ui .segment{
+  margin: 15px 0 15px 0;
+  box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.2);
+  height: 330px;
+  
+}
+.why-us-icons{
+  height: 50px;
+  margin-bottom: 15px;
+  box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.why-us-titles{
+  font-weight: bold;
+  font-family: 'Almendra Display', serif;
+}
+.why-us-p{
+  font-size: 13px;
+}
+.picture-img{
+  background-image: url('./img/wroclaw.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 200px;
+  width: 100%;
+  box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.8);
+}
+.picture-p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 31px;
+  color: white;
+  font-family: 'Almendra Display', serif;
+  z-index: 1212;
+}
 @media (max-width: 399px){
   .order-estimate-btn{
     width: 38%;
@@ -272,6 +332,9 @@ code {
   .fa-instagram{
     right: 10px;
   }
+  .picture-p{
+    font-size: 8px;
+  }
 }
 @media (min-width:400px) and (max-width:567px) {
   .order-estimate-btn{
@@ -288,7 +351,10 @@ code {
     left: 23%;
   }
   .ui.inverted.vertical.segment .Copy-right{
-    font-size: 12px;
+    font-size: 11px;
+  }
+  .picture-p{
+    font-size: 10px;
   }
 }
 @media(min-width: 568px) and (max-width:767px){
@@ -308,8 +374,11 @@ code {
   .ui.inverted.vertical.segment .Copy-right{
     font-size: 13px;
   }
+  .picture-p{
+    font-size: 15px;
+  }
 }
-@media (min-width:768px) and (max-width: 991px){
+@media (min-width:768px) and (max-width: 992px){
   .order-estimate-btn{
     width: 25%;
     font-size: 12px;
@@ -326,6 +395,9 @@ code {
   .ui.inverted.vertical.segment .Copy-right{
     font-size: 13px;
   }
+  .picture-p{
+    font-size: 20px;
+  }
 }
 @media(min-width: 992px) and (max-width:1200px) {
   .order-estimate-btn{
@@ -334,26 +406,31 @@ code {
   .order-estimate-right-sub, .order-estimate-left-sub{
     font-size: 22px;
   }
+  .picture-p{
+    font-size: 26px;
+  }
 }
-@media(max-width:991px){
+@media(max-width:992px){
   .estimate-form{
     display: block;
     padding: 20px;
     gap: 20px;
     background-color: white;
-    box-shadow: 5px 5px 10px 10px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
   }
-  .estimate-title-box{
-    margin-top: 25px;
-  }
+   .last-input{
+    margin-bottom: 20px;
+   }
   .pp{
     margin-top: 15px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
   }
-
+  .ui .segment{
+    height: 265px;
+  }
 }
 @media(min-width:992px){
   .header-img{

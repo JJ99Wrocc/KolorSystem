@@ -13,18 +13,18 @@ function NavbarWeb() {
     <Navbar fixed="top" data-bs-theme="light" className='d-none d-lg-block navbar-web container-fluid'>
       <Container className="d-flex justify-content-between align-items-center">
         <Navbar.Brand className='navbar' href="#home">
-          
+  
           <img  src={kolorsystem} className="navbarweb-image">
           
-          </img>
+</img>
           </Navbar.Brand>
         <Nav className="ms-auto nav-links">
         <NavDropdown title="Usługi" id="nav-dropdown">
                 <NavDropdown.Item href="#one">One</NavDropdown.Item>
                 <NavDropdown.Item href="#two">Two</NavDropdown.Item>
               </NavDropdown>
-          <Nav.Link href="#home">O nas</Nav.Link>
-          <Nav.Link onClick={(e) => navigate("/estimate")} href="#features">Wycena</Nav.Link>
+          <Nav.Link href="#home" onClick={()=> navigate("/")}>Strona główna</Nav.Link>
+          <Nav.Link onClick={() => navigate("/estimate")} href="#features">Wycena</Nav.Link>
           <Nav.Link href="#pricing">Kontakt</Nav.Link>
         </Nav>
       </Container>

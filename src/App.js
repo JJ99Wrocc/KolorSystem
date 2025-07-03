@@ -7,6 +7,8 @@ import OrderEstimate from "./components/OrderEstimate";
 import Estimate from "./components/estimate";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
+import WhyUs from "./components/WhyUs";
+import Picture from "./components/picture";
 
 function LayoutWithNavAndFooter({ children }) {
   return (
@@ -28,12 +30,19 @@ function AppRoutes(){
           <LayoutWithNavAndFooter>
             <Headers />
             <OrderEstimate />
+            <WhyUs />
+            <Picture />
           </LayoutWithNavAndFooter>
         }
       />
       <Route path="/estimate" element={
         <LayoutWithNavAndFooter>
           <Estimate />
+        </LayoutWithNavAndFooter>
+      } />
+      <Route path="/headers" element={
+        <LayoutWithNavAndFooter>
+          <Headers />
         </LayoutWithNavAndFooter>
       } />
 

@@ -28,7 +28,7 @@ const Estimate = () => {
   };
 
   const addressValid = (value) => {
-    const addressRegex = /^[A-Za-z0-9żźćńółęąśŻŹĆĄŚĘŁÓŃ\s\.,\-\/]{5,}$/;
+    const addressRegex = /^[A-Za-z0-9żźćńółęąśŻŹĆĄŚĘŁÓŃ\s,]{5,}$/;
     setIsAddressValid(addressRegex.test(value));
   };
 
@@ -36,20 +36,8 @@ const Estimate = () => {
     const phoneRegex = /^[0-9]{9}$/;
     setIsPhoneValid(phoneRegex.test(value));
   };
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    moreInformation: '',
-  });
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-  const handle = handleChange;
+
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submit clicked");
@@ -215,7 +203,7 @@ const Estimate = () => {
             <input
               type="text"
               placeholder="Powiedz nam coś więcej o Twojej nieruchomości"
-              className="estimate-input"
+              className="estimate-input last-input"
               value={moreInformation}
               onChange={(e) => {setMoreInformation(e.target.value)
                           }
