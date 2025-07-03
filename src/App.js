@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import WhyUs from "./components/WhyUs";
 import Picture from "./components/picture";
 import MySwiper from "./components/MySwiper";
+import Proces from "./components/Process";
 
 function LayoutWithNavAndFooter({ children }) {
   return (
@@ -34,6 +35,7 @@ function AppRoutes(){
             <WhyUs />
             <Picture />
             <MySwiper />
+            <Proces />
           </LayoutWithNavAndFooter>
         }
       />
