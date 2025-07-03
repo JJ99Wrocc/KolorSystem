@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.479b5f78.css",
-    "main.js": "/KolorSystem/static/js/main.b17d6660.js",
+    "main.css": "/KolorSystem/static/css/main.1d1d5e4c.css",
+    "main.js": "/KolorSystem/static/js/main.dc7f8797.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
     "static/media/Headerxxl.png": "/KolorSystem/static/media/Headerxxl.9de84bab2cfda5110740.png",
     "static/media/headerimg.png": "/KolorSystem/static/media/headerimg.92054990ddd9fc8fcebc.png",
+    "static/media/referencje.png": "/KolorSystem/static/media/referencje.caef34c873fca9f8c39c.png",
+    "static/media/doswiadczenie.png": "/KolorSystem/static/media/doswiadczenie.186bb60ce2c99c6520c5.png",
+    "static/media/dostepnosc.png": "/KolorSystem/static/media/dostepnosc.7baaeb9fd8f43cd6256e.png",
     "static/media/kolorsystem.png": "/KolorSystem/static/media/kolorsystem.8b3f3e834157d892a1cd.png",
+    "static/media/happycliente.png": "/KolorSystem/static/media/happycliente.a07bf697797733c1c825.png",
+    "static/media/wroclaw.jpg": "/KolorSystem/static/media/wroclaw.b57c5d2bced7ca543290.jpg",
     "static/media/estimate1200px.jpg": "/KolorSystem/static/media/estimate1200px.7050003cd5a637106f0b.jpg",
     "index.html": "/KolorSystem/index.html",
-    "main.479b5f78.css.map": "/KolorSystem/static/css/main.479b5f78.css.map",
-    "main.b17d6660.js.map": "/KolorSystem/static/js/main.b17d6660.js.map",
+    "main.1d1d5e4c.css.map": "/KolorSystem/static/css/main.1d1d5e4c.css.map",
+    "main.dc7f8797.js.map": "/KolorSystem/static/js/main.dc7f8797.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.479b5f78.css",
-    "static/js/main.b17d6660.js"
+    "static/css/main.1d1d5e4c.css",
+    "static/js/main.dc7f8797.js"
   ]
 }
