@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import NavbarWeb from "./components/Navbar";
 import NavbarMobile from "./components/NavbarMobile";
@@ -9,11 +9,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
 import WhyUs from "./components/WhyUs";
 import Picture from "./components/picture";
-import MySwiper from "./components/MySwiper";
+// import MySwiper from "./components/MySwiper";
 import Proces from "./components/Process";
+import "aos/dist/aos.css";
+import AOS from "aos";
+
 
 function LayoutWithNavAndFooter({ children }) {
   return (
+    
     <>
       <NavbarWeb />
       <NavbarMobile />
@@ -34,8 +38,9 @@ function AppRoutes(){
             <OrderEstimate />
             <WhyUs />
             <Picture />
-            <MySwiper />
+           
             <Proces />
+            
           </LayoutWithNavAndFooter>
         }
       />
@@ -53,6 +58,7 @@ function AppRoutes(){
     </Routes>
   )
 }
+
 
 function App() {
   return (

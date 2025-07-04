@@ -11,7 +11,7 @@ function NavbarMobile() {
   const expand = 'lg'; // działa dla < 992px
   const navigate = useNavigate();
   return (
-    <Navbar fixed="top" expand={expand} className="d-block d-lg-none nav-mobile">
+    <Navbar fixed="top"  bg='white' expand={expand} className="d-block d-lg-none nav-mobile">
       <Container fluid>
         {/* Brand z lewej */}
         <Navbar.Brand href="#">
