@@ -63,6 +63,9 @@ const Proces = () => {
               <i className={`fa-solid ${item.icon}`}></i> {item.title}
             </p>
             <p className="process-p">{item.text}</p>
+            {index !== processData.length - 1 && (
+      <div className="arrow-down"><i className="fa-solid fa-arrow-down"></i></div>
+    )}
           </motion.div>
         ))}
       </div>

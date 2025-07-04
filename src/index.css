@@ -353,6 +353,11 @@ p:last-child{
   /* margin-bottom: 30px; */
   margin: 25px 50px 25px 50px;
 }
+.arrow-down{
+  text-align: center;
+  margin: 10px 0 10px 0;
+  animation: arrowUpDown 1s ease-in-out infinite;
+}
 
 @media (max-width: 399px){
   .order-estimate-btn{
@@ -504,3 +509,11 @@ p:last-child{
     margin-top: 10px;
   }
 }
+@keyframes arrowUpDown{
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(5px); }
+
+}
+
+
+
