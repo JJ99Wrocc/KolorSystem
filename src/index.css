@@ -171,6 +171,7 @@ code {
   font-family: 'Almendra Display', serif;
   font-size: 25px;
   color:  navajowhite;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .estimate-img{
@@ -192,6 +193,7 @@ code {
   font-size: 55px;
   font-family: 'Almendra Display', serif;
   z-index: 10;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.9);
 }
 .estimate-container{
   position: relative;
@@ -201,7 +203,7 @@ code {
   padding-top: 20px;
   font-size: 20px;
   font-weight: bold;
-  
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .estimate-p{
   padding: 10px 0 20px 0;
@@ -211,6 +213,7 @@ code {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 20px;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .estimate-input{
@@ -282,8 +285,10 @@ code {
   box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.2);
 }
 .why-us-titles{
+  color: maroon;
   font-weight: bold;
   font-family: 'Almendra Display', serif;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .why-us-p{
   font-size: 13px;
@@ -307,12 +312,7 @@ code {
   font-family: 'Almendra Display', serif;
   z-index: 1212;
 }
-.swiper-arrow{
-  font-size: 25px;
-  gap: 10px;
-  display: inline-block;
-  animation: moveArrow10px 1s ease-in-out infinite;
-}
+
 .swiper{
   height: 100%;
   display: flex;
@@ -328,6 +328,22 @@ code {
   height: 100%;
   width: 100%;
 }
+.process .ui.segment{
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+.process-titles{
+  text-align: center;
+  color: maroon;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+}
+p:last-child{
+  margin-bottom: 5px;
+}
+.process-p{ text-align: center;}
+
 @media (max-width: 399px){
   .order-estimate-btn{
     width: 38%;
@@ -449,6 +465,7 @@ code {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
   }
   .ui .segment{
     height: 265px;
@@ -478,11 +495,3 @@ code {
   }
 }
 
-@keyframes moveArrow10px {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(10px);
-  }
-}
