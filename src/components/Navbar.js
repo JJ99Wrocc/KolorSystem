@@ -19,10 +19,6 @@ function NavbarWeb() {
 </img>
           </Navbar.Brand>
         <Nav className="ms-auto nav-links">
-        <NavDropdown title="Usługi" id="nav-dropdown">
-                <NavDropdown.Item href="#one">One</NavDropdown.Item>
-                <NavDropdown.Item href="#two">Two</NavDropdown.Item>
-              </NavDropdown>
           <Nav.Link href="#home" onClick={()=> navigate("/")}>Strona główna</Nav.Link>
           <Nav.Link onClick={() => navigate("/estimate")} href="#features">Wycena</Nav.Link>
           <Nav.Link href="#pricing">Kontakt</Nav.Link>

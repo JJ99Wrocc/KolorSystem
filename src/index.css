@@ -9,9 +9,10 @@ body {
 .ui.segment:first-child{
   margin-top: 15px;
 }
-
 html, body {
   overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -114,6 +115,7 @@ code {
   width: 100%;
   z-index: 1030;
 }
+
 .offcanvas-backdrop {
   overflow-x: hidden !important;
 }

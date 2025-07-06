@@ -42,7 +42,7 @@ const processData = [
 
 const Proces = () => {
   return (
-    <div className="process">
+    <div className="process aos-wrapper">
       <div className="container ui segment process-container">
         <div className="estimate-title-box">PRZEBIEG WSPÓŁPRACY</div>
         <hr className="line" />

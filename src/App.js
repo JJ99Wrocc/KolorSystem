@@ -15,10 +15,12 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 
+
 function LayoutWithNavAndFooter({ children }) {
   return (
     
     <>
+      
       <NavbarWeb />
       <NavbarMobile />
       {children}

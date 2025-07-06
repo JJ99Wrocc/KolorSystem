@@ -7,7 +7,8 @@ const Headers = () => {
     return( 
         <div className="wrapper">
             <img className="header-img lg-none" src={headerimg}></img>
-            <div className="header-img-shadow"></div>
+            
+            {/* <div className="header-img-shadow"></div> */}
         </div>
     )
 }

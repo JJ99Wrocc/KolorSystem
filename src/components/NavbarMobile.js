@@ -39,15 +39,11 @@ function NavbarMobile() {
               <Nav.Link className='nav-links-mobile'   href="#home" onClick={()=> navigate("/")}>Strona Główna</Nav.Link>
               <Nav.Link className='nav-links-mobile' onClick={() =>{navigate("/estimate")}} href="#about">Wycena</Nav.Link>
               <Nav.Link className='nav-links-mobile' href="#contact">Kontakt</Nav.Link>
-              <NavDropdown title="Usługi" id="nav-dropdown">
-                <NavDropdown.Item href="#one">One</NavDropdown.Item>
-                <NavDropdown.Item href="#two">Two</NavDropdown.Item>
-              </NavDropdown>
             </Nav>
-            <Form className="d-flex mt-3">
+            {/* <Form className="d-flex mt-3">
               <Form.Control type="search" placeholder="Search" className="me-2" />
               <Button variant="outline-success">Search</Button>
-            </Form>
+            </Form> */}
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
