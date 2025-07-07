@@ -21,7 +21,7 @@ function NavbarWeb() {
         <Nav className="ms-auto nav-links">
           <Nav.Link href="#home" onClick={()=> navigate("/")}>Strona główna</Nav.Link>
           <Nav.Link onClick={() => navigate("/estimate")} href="#features">Wycena</Nav.Link>
-          <Nav.Link href="#pricing">Kontakt</Nav.Link>
+          <Nav.Link onClick={() => navigate("/contactus")} href="#pricing">Kontakt</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

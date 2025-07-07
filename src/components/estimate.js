@@ -12,7 +12,7 @@ const Estimate = () => {
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [address, setAddress] = useState("");
   const [isAddressValid, setIsAddressValid] = useState(false);
-  const [moreInformation, setMoreInformation] = useState("");
+  const [text, setText] = useState("");
   const [wybor, setWybor] = useState("");
   const [wybor2, setWybor2] = useState("");
   const [isConsentGiven, setIsConsentGiven] = useState(false);
@@ -60,10 +60,10 @@ const Estimate = () => {
       email,
       phone,
       address,
-      moreInformation,
+      text,
       wybor,
       wybor2,
-      isConsentGiven,
+      consent: isConsentGiven,
       timestamp: new Date(),
     };
 
@@ -80,7 +80,7 @@ const Estimate = () => {
       setIsPhoneValid(false);
       setAddress("");
       setIsAddressValid(false);
-      setMoreInformation("");
+      setText("");
       setWybor("");
       setWybor2("");
       setIsConsentGiven(false);
@@ -99,7 +99,7 @@ const Estimate = () => {
         name: name,
         email: email,
         phone: phone,
-        message: moreInformation,  
+        message: text,  
       };
     await  emailjs.send(
         "service_6clsdqg",
@@ -204,8 +204,8 @@ const Estimate = () => {
               type="text"
               placeholder="Powiedz nam coś więcej o Twojej nieruchomości"
               className="estimate-input last-input"
-              value={moreInformation}
-              onChange={(e) => {setMoreInformation(e.target.value)
+              value={text}
+              onChange={(e) => {setText(e.target.value)
                           }
                          } />
           </div>

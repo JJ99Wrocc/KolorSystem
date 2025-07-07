@@ -1,17 +1,215 @@
-import React from "react";
+import React, { useState } from "react";
 
+import emailjs from 'emailjs-com';
+const ContactUs = () => {
+  const [name, setName] = useState("");
+  const [isNameValid, setIsNameValid] = useState(false);
+  const [email, setEmail] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(false);
+  const [phone, setPhone] = useState("");
+  const [isPhoneValid, setIsPhoneValid] = useState(false);
+  const [isConsentGiven, setIsConsentGiven] = useState(false);
+  const [text, setText] = useState("");
 
-const ContactUs = () =>{
+  const nameValidate = (value) => {
+    const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿżźćńółęąśŻŹĆĄŚĘŁÓŃ\s'-]{2,}$/;
+    setIsNameValid(nameRegex.test(value));
+  };
 
-return(
+  const emailValidate = (value) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setIsEmailValid(emailRegex.test(value));
+  };
 
-    <div>
+  const phoneValidate = (value) => {
+    const phoneRegex = /^[0-9]{9}$/;
+    setIsPhoneValid(phoneRegex.test(value));
+  };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    if (
+      !isNameValid ||
+      !isEmailValid ||
+      !isPhoneValid ||
+      !isConsentGiven ||
+      text.trim() === ""
+    ) {
+      alert("Uzupełnij poprawnie wszystkie pola i zaakceptuj zgodę.");
+      return;
+    }
+  
+    const dataToSend = {
+      name,
+      email,
+      phone,
+      text,
+      consent: isConsentGiven,
+    };
+  
+    const templateParams = {
+      name,
+      email,
+      phone,
+      message: text,
+    };
+  
+    try {
+      // EmailJS wysyłka
+      const result = await emailjs.send(
+        "service_6clsdqg",
+        "template_t33wcuk",
+        templateParams,
+        "b0kSQQdQ70kSaSPcg"
+      );
+      console.log("E-mail wysłany:", result.text);
+  
+      // Reset formularza
+      setName("");
+      setIsNameValid(false);
+      setEmail("");
+      setIsEmailValid(false);
+      setPhone("");
+      setIsPhoneValid(false);
+      setText("");
+      setIsConsentGiven(false);
+  
+      alert("Formularz został poprawnie wysłany!");
+    } catch (error) {
+      console.error("Błąd wysyłania e-maila:", error);
+      alert("Błąd przy wysyłaniu formularza.");
+    }
+  };
+  
+  return (
+    <div className="contact-us-box">
+      <div className="contact-us-img">
+        <div className="contact-us-img"></div>
+        <div className="contact-us-shadow"></div>
+        <div className="estimate-title">KONTAKT</div>
+      </div>
+
+      <div className="container">
+        <div className="estimate-title-p" style={{ textAlign: "center" }}>
+          ODEZWIJ SIĘ DO NAS
+        </div>
+        <hr className="line" />
+        <p className="estimate-p" style={{ textAlign: "center" }}>
+          Zadzwoń do nas lub wypełnij formularz online, aby umówić się na
+          konsultację, inspekcję, wycenę projektu lub zadać pytania dotyczące
+          naszych usług. Jesteśmy do Twojej dyspozycji i czekamy na kontakt!
+        </p>
+        <div className="contact-box">
+          <div>
+            <i className="fa-solid fa-address-book"></i>
+          </div>
+          <div className="text">
+            <a className="contact-link" href="tel:669396328">
+              669396328
+            </a>
+            <a
+              className="contact-link"
+              href="mailto:esangbedojoachim@gmail.com"
+            >
+              esangbedojoachim@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* FORM START */}
+      <form className="container contact-us-form" onSubmit={handleSubmit}>
+        <div className="contact-us-form-left-box">
+          <input
+            type="text"
+            className="estimate-input contact-us-input"
+            placeholder="Imię i nazwisko/ nazwa firmy"
+            value={name}
+            onChange={(e) => {
+              const newName = e.target.value;
+              setName(newName);
+              nameValidate(newName);
+            }}
+          />
+          {name.length === 0 ? (
+            <p>Np: Jan Kowalski</p>
+          ) : !isNameValid ? (
+            <p className="error-name">Musisz wypełnić te pole</p>
+          ) : null}
+
+          <input
+            type="email"
+            className="estimate-input contact-us-input"
+            placeholder="Adres email"
+            value={email}
+            onChange={(e) => {
+              const newEmail = e.target.value;
+              setEmail(newEmail);
+              emailValidate(newEmail);
+            }}
+          />
+          {email.length === 0 ? (
+            <p>Np: jankowalski@gmail.com</p>
+          ) : !isEmailValid ? (
+            <p className="error-name">Wpisz poprawny adres email</p>
+          ) : null}
+
+          <input
+            type="tel"
+            className="estimate-input contact-us-input"
+            placeholder="Telefon kontaktowy"
+            value={phone}
+            onChange={(e) => {
+              const newPhone = e.target.value;
+              setPhone(newPhone);
+              phoneValidate(newPhone);
+            }}
+          />
+          {phone.length === 0 ? (
+            <p>Np: 123 333 337</p>
+          ) : !isPhoneValid ? (
+            <p className="error-name">Wpisz poprawny numer telefonu</p>
+          ) : null}
+        </div>
+
+        <div className="contact-us-form-right-box">
+          <textarea
+            className="estimate-textarea"
+            placeholder="Wpisz wiadomość..."
+            rows="5"
+            value={text}
+            onChange={(e) => {
+              const newText = e.target.value;
+              setText(newText);
+            }}
+          />
+
+          <label className="estimate-info">
+            <input
+              type="checkbox"
+              name="zgoda"
+              value="check"
+              checked={isConsentGiven}
+              onChange={(e) => setIsConsentGiven(e.target.checked)}
+            />
+            Niniejszym, wyrażam zgodę na gromadzenie i przetwarzanie moich
+            danych osobowych przez KolorSystem w celu przesyłania mi na adres
+            poczty elektronicznej, oraz numer telefonu informacji
+            marketingowych, a także bezpośredniego kontaktu telefonicznego w
+            celu marketingowym oraz na profilowanie przez Administratora danych
+            moich danych osobowych w celu przedstawienia mi zindywidualizowanej
+            oferty, reklamy i promocji. Jednocześnie jestem świadomy/a, iż w/w
+            podmioty są administratorami moich danych osobowych.
+          </label>
+
+          <button type="submit" className="estimate-btn">
+            Wyślij
+          </button>
+        </div>
+      </form>
     </div>
+  );
+};
 
-)
-}
-
-
-
-export default ContactUs
+export default ContactUs;

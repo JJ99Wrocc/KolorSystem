@@ -11,8 +11,7 @@ import WhyUs from "./components/WhyUs";
 import Picture from "./components/picture";
 // import MySwiper from "./components/MySwiper";
 import Proces from "./components/Process";
-import "aos/dist/aos.css";
-import AOS from "aos";
+import ContactUs from "./components/ContactUs";
 
 
 
@@ -49,6 +48,12 @@ function AppRoutes(){
       <Route path="/estimate" element={
         <LayoutWithNavAndFooter>
           <Estimate />
+        </LayoutWithNavAndFooter>
+      } />
+      
+      <Route path="/contactus" element={
+        <LayoutWithNavAndFooter>
+          <ContactUs />
         </LayoutWithNavAndFooter>
       } />
       <Route path="/headers" element={

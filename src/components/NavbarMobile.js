@@ -38,7 +38,7 @@ function NavbarMobile() {
             <Nav className="justify-content-end flex-grow-1 pe-3 ">
               <Nav.Link className='nav-links-mobile'   href="#home" onClick={()=> navigate("/")}>Strona Główna</Nav.Link>
               <Nav.Link className='nav-links-mobile' onClick={() =>{navigate("/estimate")}} href="#about">Wycena</Nav.Link>
-              <Nav.Link className='nav-links-mobile' href="#contact">Kontakt</Nav.Link>
+              <Nav.Link className='nav-links-mobile'  onClick={()=> navigate("/contactus")} href="#contact">Kontakt</Nav.Link>
             </Nav>
             {/* <Form className="d-flex mt-3">
               <Form.Control type="search" placeholder="Search" className="me-2" />
