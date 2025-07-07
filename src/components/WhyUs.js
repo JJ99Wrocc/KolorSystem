@@ -69,7 +69,7 @@ const WhyUs = () => {
 
   return (
     <>
-      <div className="why-us-title aos-wrapper">DLACZEGO MY?</div>
+      <div className="why-us-title" style={{overflowX:"auto"}}>DLACZEGO MY?</div>
       <hr className="line" />
       <div className="ui container segment why-us-container">
         <div className="row why-us-row">
