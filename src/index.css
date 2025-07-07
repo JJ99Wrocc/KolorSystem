@@ -246,6 +246,7 @@ code {
 }
 .estimate-btn{
   margin: 0 auto;
+  margin-bottom: 30px;
   height: 40px;
   width: 99%;
   background-color: antiquewhite;
@@ -548,6 +549,13 @@ p:last-child{
   }
   .ui .segment{
     height: 265px;
+  }
+    .contact-us-form{
+    display: block;
+  }
+  .contact-us-form-left-box,
+  .contact-us-form-right-box{
+    width: 100%;
   }
 }
 @media(min-width:992px){
