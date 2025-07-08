@@ -29,7 +29,7 @@ function NavbarMobile() {
           placement="end"
           
         >
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header  closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
               Menu
             </Offcanvas.Title>

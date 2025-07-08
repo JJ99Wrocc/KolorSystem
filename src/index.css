@@ -593,9 +593,14 @@ p:last-child{
   .contact-heading{
     font-size: 22px;
   } .contact-link{
-    font-size: 12px;
-  
-   
+    font-size: 12px;   
+  }
+  .estimate-textarea{
+    margin: 0;
+    padding: 0;
+  }
+  .offcanvas.offcanvas-end{
+    width: 50% !important;
   }
 }
 @media(min-width:992px){
