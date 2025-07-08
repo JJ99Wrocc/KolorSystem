@@ -75,7 +75,7 @@ const ContactUs = () => {
       setText("");
       setIsConsentGiven(false);
   
-      alert("Formularz został poprawnie wysłany!");
+      alert("Dziękujemy, wiadomość została wysłana. Odpowiemy w ciągu 24 godzin.");
     } catch (error) {
       console.error("Błąd wysyłania e-maila:", error);
       alert("Błąd przy wysyłaniu formularza.");
@@ -91,29 +91,25 @@ const ContactUs = () => {
       </div>
 
       <div className="container">
-        <div className="estimate-title-p" style={{ textAlign: "center" }}>
-          ODEZWIJ SIĘ DO NAS
-        </div>
+    
+        <h2 className="contact-heading">Masz pytanie? Napisz do nas!</h2>
+<p className="contact-subheading">Odpowiadamy w ciągu 24h</p>
         <hr className="line" />
-        <p className="estimate-p" style={{ textAlign: "center" }}>
-          Zadzwoń do nas lub wypełnij formularz online, aby umówić się na
-          konsultację, inspekcję, wycenę projektu lub zadać pytania dotyczące
-          naszych usług. Jesteśmy do Twojej dyspozycji i czekamy na kontakt!
-        </p>
+
         <div className="contact-box">
           <div>
             <i className="fa-solid fa-address-book"></i>
           </div>
           <div className="text">
-            <a className="contact-link" href="tel:669396328">
+          <div><i className="fa-solid fa-phone"></i> <a className="contact-link" href="tel:669396328">
               669396328
-            </a>
-            <a
+            </a></div>
+            <div><i className="fa-solid fa-envelope"></i> <a
               className="contact-link"
               href="mailto:esangbedojoachim@gmail.com"
             >
               esangbedojoachim@gmail.com
-            </a>
+            </a></div>
           </div>
         </div>
       </div>
@@ -123,7 +119,7 @@ const ContactUs = () => {
         <div className="contact-us-form-left-box">
           <input
             type="text"
-            className="estimate-input contact-us-input"
+            className="estimate-input contact-us-input iin"
             placeholder="Imię i nazwisko/ nazwa firmy"
             value={name}
             onChange={(e) => {
@@ -133,7 +129,7 @@ const ContactUs = () => {
             }}
           />
           {name.length === 0 ? (
-            <p>Np: Jan Kowalski</p>
+            <p className="contact-p">Np: Jan Kowalski</p>
           ) : !isNameValid ? (
             <p className="error-name">Musisz wypełnić te pole</p>
           ) : null}
@@ -150,7 +146,7 @@ const ContactUs = () => {
             }}
           />
           {email.length === 0 ? (
-            <p>Np: jankowalski@gmail.com</p>
+            <p className="contact-p">Np: jankowalski@gmail.com</p>
           ) : !isEmailValid ? (
             <p className="error-name">Wpisz poprawny adres email</p>
           ) : null}
@@ -167,7 +163,7 @@ const ContactUs = () => {
             }}
           />
           {phone.length === 0 ? (
-            <p>Np: 123 333 337</p>
+            <p className="contact-p">Np: 123 333 337</p>
           ) : !isPhoneValid ? (
             <p className="error-name">Wpisz poprawny numer telefonu</p>
           ) : null}

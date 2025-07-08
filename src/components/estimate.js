@@ -142,7 +142,7 @@ const Estimate = () => {
             <input
               type="text"
               placeholder="Imię i nazwisko/ nazwa firmy"
-              className="estimate-input"
+              className="estimate-input iin"
               value={name}
               onChange={(e) => {
                 const newName = e.target.value;
