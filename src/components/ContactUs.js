@@ -101,11 +101,12 @@ const ContactUs = () => {
             <i className="fa-solid fa-address-book"></i>
           </div>
           <div className="text">
-          <div><i className="fa-solid fa-phone"></i> <a className="contact-link" href="tel:669396328">
+          <div className="contact-link"><i className="fa-solid fa-phone"></i> <a 
+          className="linkk" href="tel:669396328">
               669396328
             </a></div>
-            <div><i className="fa-solid fa-envelope"></i> <a
-              className="contact-link"
+            <div className="contact-link"><i className="fa-solid fa-envelope"></i> <a
+              className="linkk"
               href="mailto:esangbedojoachim@gmail.com"
             >
               esangbedojoachim@gmail.com
