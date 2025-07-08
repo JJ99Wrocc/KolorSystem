@@ -372,9 +372,13 @@ p:last-child{
 
   .contact-box {
     display: flex;
+    padding: 20px;
     align-items: center;
     gap: 12.5px; 
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   }
+  
   
   .fa-address-book{
     font-size: 40px; 
@@ -391,6 +395,7 @@ p:last-child{
     margin: 10px 0 10px 0;
     color: black;
     text-decoration: none;
+    word-break: break-all;
   }
   .contact-link:hover{
     transform: scale(1.1);
@@ -582,6 +587,9 @@ p:last-child{
   .contact-us-form-left-box,
   .contact-us-form-right-box{
     width: 100%;
+  }
+  .contact-heading{
+    font-size: 22px;
   }
 }
 @media(min-width:992px){
