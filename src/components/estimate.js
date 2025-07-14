@@ -69,7 +69,7 @@ const Estimate = () => {
 
     try {
       await addDoc(collection(db, "estimates"), dataToSend);
-      alert("Formularz wysłany pomyślnie!");
+      alert("Dziękujemy, wiadomość została wysłana. Odpowiemy w ciągu 24 godzin.");
 
       // Czyszczenie formularza
       setName("");
@@ -100,6 +100,8 @@ const Estimate = () => {
         email: email,
         phone: phone,
         message: text,  
+        wybor: wybor,
+        wybor2: wybor2,
       };
     await  emailjs.send(
         "service_6clsdqg",
@@ -142,7 +144,7 @@ const Estimate = () => {
             <input
               type="text"
               placeholder="Imię i nazwisko/ nazwa firmy"
-              className="estimate-input iin"
+              className="estimate-input "
               value={name}
               onChange={(e) => {
                 const newName = e.target.value;
