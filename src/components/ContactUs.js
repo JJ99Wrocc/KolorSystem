@@ -75,7 +75,7 @@ const ContactUs = () => {
       setText("");
       setIsConsentGiven(false);
   
-      alert("Dziękujemy, wiadomość została wysłana. Odpowiemy w ciągu 24 godzin.");
+      alert("Dziękujemy, wiadomość została wysłana. Odpowiemy w ciągu 24 godzin");
     } catch (error) {
       console.error("Błąd wysyłania e-maila:", error);
       alert("Błąd przy wysyłaniu formularza.");
