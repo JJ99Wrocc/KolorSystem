@@ -69,10 +69,20 @@ code {
   background-color: transparent; 
   backdrop-filter: blur(10px);
 }
-.nav-mobile{
-  overflow-x: hidden;
+.nav-mobile {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
   z-index: 1000000000;
+  overflow-x: hidden;
 }
+
+.nav-mobile.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 .navbar-container{
   display: flex;
   justify-content: space-between;
@@ -155,14 +165,14 @@ code {
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 15px;
-  background-color: antiquewhite;
+  background-color: #e94e31;
   transition: background-color 0.5s ease;
   font-family: 'Almendra Display', serif;
   color: black;
   border: maroon 1px solid;
 }
 .order-estimate-btn:hover{
-  background-color: khaki;
+  background-color: #cc4128;
 }
 .order-estimate-left-sub{
   left: 32%;
