@@ -253,7 +253,7 @@ const Estimate = () => {
                     }
                   }
                 />
-                Lokal usługowy/ użytkowy
+                Biuro
               </label>
               <br />
 
@@ -271,7 +271,7 @@ const Estimate = () => {
               </label>
             </div>
 
-            <p className="pp">Skąd się o nas dowiedziałeś?</p>
+            <p className="estimate-title-box">SKĄD SIĘ O NAS DOWIEDZIAŁEŚ?</p>
             <div>
               <label className="estimate-input-right">
                 <input
@@ -320,6 +320,7 @@ const Estimate = () => {
                 type="checkbox"
                 name="zgoda"
                 value="check"
+                className="checkbox"
                 checked={isConsentGiven}
                 onChange={(e) => {setIsConsentGiven(e.target.checked)
                     }

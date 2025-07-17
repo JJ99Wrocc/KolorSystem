@@ -20,7 +20,7 @@ function NavbarMobile() {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log('scrollY:', window.scrollY);
+      // console.log('scrollY:', window.scrollY);
       if (window.scrollY > 100) {
         setIsVisible(true);
       } else {
