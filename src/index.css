@@ -8,8 +8,13 @@ body {
 }
 .header{
   height: 200px;
-  background-color: maroon;
-}
+  background-color: #F4F1DE;
+  background-image: url('./img/zobaczmy\ jak\ to\ wygląda.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  }
 
 .ui.segment:first-child{
   margin-top: 15px;
@@ -111,6 +116,9 @@ code {
   color: #F0D8B0;
   /* background-color: #F0D8B0; */
 }
+button.e.navbar-toggler.collapsed{
+  background-color: #A3B18A;
+}
 .navbarweb-image, .nav-mobile-logo{
   height: 80px;
   width: 80px;
@@ -161,7 +169,7 @@ code {
 .order-estimate-box{
   position: relative;
   height: 70px;
-  background-color: maroon;
+  background-color: #F4F1E9;
 }
 
 .order-estimate-btn{
@@ -170,11 +178,12 @@ code {
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 15px;
-  background-color: #e94e31;
+  background-color: #A3B18A;
   transition: background-color 0.5s ease;
   font-family: 'Almendra Display', serif;
   color: black;
-  border: maroon 1px solid;
+  border: 	#D35400 1px solid;
+  border-radius: 7%;
 }
 .order-estimate-btn:hover{
   background-color: #cc4128;
@@ -190,6 +199,7 @@ code {
   color:  navajowhite;
   text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .estimate-img{
   position: relative;
@@ -466,11 +476,9 @@ p:last-child{
 @media (max-width: 399px){
   .order-estimate-btn{
     width: 38%;
-    font-size: 7px;
+    font-size: 9px;
   }
-
-
-  .ui.inverted.vertical.segment .Copy-right{
+    .ui.inverted.vertical.segment .Copy-right{
     font-size: 8px !important ;
   }
   .fa-instagram,.fa-facebook{
@@ -616,3 +624,32 @@ p:last-child{
 
 
 
+:root {
+  --color-primary: #5C4033;       /* marron */
+  --color-accent: #D35400;        /* ceglasty pomarańcz */
+  --color-bg: #F4F1DE;            /* krem */
+  --color-fresh: #A3B18A;         /* mięta */
+  --color-gray: #4B5D67;          /* stalowy szary */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+
+button {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-fresh);
+}

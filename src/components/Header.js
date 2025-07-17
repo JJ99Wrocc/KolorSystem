@@ -32,6 +32,7 @@ const Headers = () => {
       </Navbar.Brand>
 
       <Navbar.Toggle
+        className="e"
         aria-controls={`offcanvasNavbar-expand-${expand}`}
         onClick={handleShow}
       />
