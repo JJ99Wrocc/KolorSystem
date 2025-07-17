@@ -6,11 +6,11 @@ const OrderEstimate = () => {
     const navigate = useNavigate();
     return(
         <div className="order-estimate-box">
-            <div className="order-estimate-title"> 
+            {/* <div className="order-estimate-title">  */}
                 <button className="order-estimate-btn"
                         onClick={() => navigate('/estimate')}                
                 >ZAMÓW BEZPŁATNĄ WYCENE</button>
-            </div>
+            {/* </div> */}
         </div>
 
     )

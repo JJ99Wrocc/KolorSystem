@@ -7,9 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .header{
-  height: 200px;
+  height: 350px;
   background-color: #F4F1DE;
-  background-image: url('./img/zobaczmy\ jak\ to\ wygląda.svg');
+  background-image: url('./img/headerimg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
