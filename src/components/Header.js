@@ -1,5 +1,6 @@
 import React from "react";
-import headerimg from '../img/headerimg.png'
+// import headerimg from '../img/headerimg.png'
+import HeaderXXL from '../img/HeaderXXL.png'
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import kolorsystem from '../img/kolorsystem.png';
@@ -23,7 +24,7 @@ const Headers = () => {
       const handleShow = () => setShow(true);
     return( 
         <div className="wrapper">
-            <img className="header-img lg-none d-none d-lg-block" src={headerimg} alt="header-img"></img>
+            <img className="header-img lg-none d-none d-lg-block" src={HeaderXXL} alt="header-img"></img>
             <div className="header d-block d-lg-none">
   <Navbar expand="lg" bg="transparent" className="mobile-navbar">
     <Container fluid>

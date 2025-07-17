@@ -9,7 +9,7 @@ body {
 .header{
   height: 350px;
   background-color: #F4F1DE;
-  background-image: url('./img/headerimg.png');
+  background-image: url('./img/HeaderXXL.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -476,7 +476,7 @@ p:last-child{
 @media (max-width: 399px){
   .order-estimate-btn{
     width: 38%;
-    font-size: 9px;
+    font-size: 8px;
   }
     .ui.inverted.vertical.segment .Copy-right{
     font-size: 8px !important ;
@@ -595,7 +595,7 @@ p:last-child{
 }
 @media(min-width:992px){
   .header-img{
-    background-image: url('./img/Headerxxl.png');
+    background-image: url('./img/HeaderXXL.png');
     z-index: 10000000000000;
   }
   .estimate-form{
