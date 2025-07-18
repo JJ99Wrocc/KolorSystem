@@ -15,6 +15,7 @@ import ContactUs from "./components/ContactUs";
 
 
 
+
 function LayoutWithNavAndFooter({ children }) {
   return (
     
@@ -22,6 +23,7 @@ function LayoutWithNavAndFooter({ children }) {
       
       <NavbarWeb />
       <NavbarMobile />
+
       {children}
       {/* <Footer /> */}
     </>

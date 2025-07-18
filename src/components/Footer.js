@@ -1,12 +1,33 @@
 import React from "react";    
-
+import { useNavigate } from "react-router-dom";
 
 
 const Footer = () => {
+        const navigate = useNavigate();
     return ( 
         <footer className="ui inverted  bg-black text-white vertical segment footer " >
             <div className="ui container" style={{position:"relative"}}>
-               
+                    
+            <button className=" footer-estimate-btn"
+                        onClick={() => navigate('/estimate')}                
+                >UMÓW BEZPŁATNĄ WYCENE</button>
+                
+            <div className="footer-contact">
+  <p className="footer-contact-title">KONTAKT</p>
+  
+  <div className="footer-contact-icon">
+    <div className="footer-contact-row">
+      <i className="fa-solid fa-phone-volume"></i>
+      <p className="footer-contact-p phone">Telefon: 123456789</p>
+    </div>
+    
+    <div className="footer-contact-row">
+      <i className="fa-solid fa-envelope"></i>
+      <p className="footer-contact-p e-mail">Email: cośtamcośtam@fasdas.com</p>
+    </div>
+  </div>
+</div>
+
                   
                     <div >
                         <p className="Copy-right  ">© {new Date().getFullYear()} FlowMart. All rights reserved.</p>

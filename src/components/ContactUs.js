@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavBarNavConst from "./NavbarNavConst";
 
 import emailjs from 'emailjs-com';
 const ContactUs = () => {
@@ -84,6 +85,9 @@ const ContactUs = () => {
   
   return (
     <div className="contact-us-box">
+           <div className=" d-block d-lg-none">
+            <NavBarNavConst />
+    </div>
       <div className="contact-us-img">
         <div className="contact-us-img"></div>
         <div className="contact-us-shadow"></div>

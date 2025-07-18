@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../Firebase";
 import emailjs from 'emailjs-com';
+import NavBarNavConst from "./NavbarNavConst";
 
 const Estimate = () => {
   const [phone, setPhone] = useState("");
@@ -117,7 +118,11 @@ const Estimate = () => {
   };
 
   return (
+    
     <div className="estimate-box">
+       <div className=" d-block d-lg-none">
+            <NavBarNavConst />
+    </div>
       <div className="estimate-img">
         <div className="estimate-img-shadow"></div>
         <div className="estimate-title">WYCENA</div>
@@ -190,7 +195,7 @@ const Estimate = () => {
             <input
               type="text"
               placeholder="Adres usługi"
-              className="estimate-input"
+              className="estimate-input last-input"
               value={address}
               onChange={(e) => {
                 const newAddress = e.target.value;
@@ -202,14 +207,14 @@ const Estimate = () => {
               <p className="error-name">Wpisz poprawny adres</p>
             )}
 
-            <input
+            {/* <input
               type="text"
               placeholder="Powiedz nam coś więcej o Twojej nieruchomości"
               className="estimate-input last-input"
               value={text}
               onChange={(e) => {setText(e.target.value)
                           }
-                         } />
+                         } /> */}
           </div>
 
           <div className="estimate-form-right-box">
@@ -343,6 +348,7 @@ const Estimate = () => {
           </div>
         </form>
       </div>
+      
     </div>
   );
 };

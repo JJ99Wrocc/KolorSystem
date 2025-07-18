@@ -21,7 +21,7 @@ function NavbarMobile() {
   useEffect(() => {
     const handleScroll = () => {
       // console.log('scrollY:', window.scrollY);
-      if (window.scrollY > 100) {
+      if (window.scrollY > 90) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -105,14 +105,7 @@ function NavbarMobile() {
               <Button variant="outline-success">Search</Button>
             </Form> 
             */}
-            <div className="text-center mt-4">
-    <button
-      className="order-estimate-btn"
-      onClick={() => navigate('/estimate')}
-    >
-      ZAMÓW BEZPŁATNĄ WYCENĘ
-    </button>
-  </div>
+            
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

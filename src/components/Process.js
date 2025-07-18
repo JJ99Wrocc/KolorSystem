@@ -3,40 +3,40 @@ import { motion } from "framer-motion";
 
 const processData = [
   {
-    title: "Kontakt i darmowa wycena",
+    title: "Kontakt i wycena",
     icon: "fa-phone",
     text:
-      "Specjalizujemy się w profesjonalnym malowaniu – działamy na terenie Wrocławia i okolic. Wypełnij nasz formularz online lub zadzwoń, a skontaktujemy się z Tobą, by umówić dogodny termin spotkania. Zaufaj fachowcom od malowania wnętrz i elewacji.",
+      "Zadzwoń lub wypełnij formularz - oddzwonimy, ustalimy termin i przygotujemy darmową wycene.",
   },
   {
-    title: "Wizyta i finalizacja oferty",
+    title: "Spotkanie i oferta",
     icon: "fa-house-circle-check",
     text:
-      "Podczas spotkania na terenie Wrocławia i okolicach Wrocławia oceniamy stan techniczny powierzchni przeznaczonych do malowania, omawiamy zakres prac i przygotowujemy precyzyjną wycenę naszych usług malarskich.",
+      "Przyjdziemy na miejsce, sprawdzimy stan ścian i ustalimy zakres prac. Otrzymujesz konkretną ofertę bez ukrytych kosztów.",
   },
   {
     title: "Dobór kolorów",
     icon: "fa-palette",
     text:
-      "Nie wiesz, jakie kolory wybrać? Nasz zespół pomoże Ci dobrać idealną paletę barw do każdego wnętrza – i nie tylko.",
+      "Masz wątpliwości? Pomożemy dobrać kolory idealnie dopasowane do wnętrza",
   },
   {
-    title: "Malujemy starannie i kompleksowo",
+    title: "Przygotowanie i malowanie",
     icon: "fa-paint-roller",
     text:
-      "Nie musisz się o nic martwić – przesuniemy meble, naprawimy drobne pęknięcia i starannie zabezpieczymy wszystko, czego nie trzeba malować. Potem ruszamy do pracy!",
+      "Zabezpieczamy pomieszczenia, przesuwamy meble, naprawiamy drobne ustarki - i działamy",
   },
   {
-    title: "Twoja nieruchomość w nowych kolorach!",
+    title: "Efekt końcowy",
     icon: "fa-border-all",
     text:
-      "Nasz zespół doświadczonych malarzy z Wrocławia realizuje kompleksowe usługi malarskie zgodnie z najwyższymi standardami – zarówno wewnątrz, jak i na zewnątrz budynków. Gwarantujemy precyzję, czystość i trwały efekt.",
+      "Malujemy precyzyjnie i czysto, wewnątrz i na zewnątrz. Gwarantujemy trwały efekt.",
   },
   {
-    title: "Sprzątanie i odbiór prac",
+    title: "Sprzątanie i odbiór",
     icon: "fa-brush",
     text:
-      "Dbamy o Twoją własność z najwyższą starannością. Po zakończeniu malowania dokładnie sprzątamy, tak aby Twoja nieruchomość była w idealnym porządku — poza świeżo pomalowanymi ścianami. Następnie wspólnie odbieramy i sprawdzamy jakość wykonanych prac. Dokładne, precyzyjne i szybkie malowanie? We Wrocławiu to zadanie dla specjalistów z KolorSystem!",
+      "Po pracy zostawiamy porządek i wspólnie odbieramy zlecenie. Bez poprawek - jest zrobione raz, a dobrze",
   },
 ];
 

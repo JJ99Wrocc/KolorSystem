@@ -41,27 +41,56 @@ code {
 /* WSP */
 
 .footer{
-  height: 50px;
+  height: 180px;
 }
 .Copy-right{
   position: absolute;
-  top: 10px;
+  top: 140px;
   left: 50%;
   transform: translate(-50%); 
 }
-.fa-facebook{
-  right: 20px;
+.footer-estimate-btn{
+  position: absolute;
+  top: 20px;
+  height: 45px;
+  width: 40%;
+  left: 50%;
+  justify-content: center;
+align-items: center;
+  transform: translate(-50%,-50%);
+  font-size: 9px;
+  background-color: #F5F5DC;
+  transition: background-color 0.5s ease;
+  font-family: 'Almendra Display', serif;
+  color: black;
+  border: 	#D35400 1px solid;
+  border-radius: 7%;
 }
-.fa-instagram{
-  right: 50px;
+.footer-estimate-btn:hover{
+  background-color: #cc4128 ;
 }
-.fa-instagram,.fa-facebook{
-  color: pink;  
-  font-size: 20px;
-  top: 10px;
+
+.footer-contact{
+  position: absolute;
+ left: 5px;
+ top: 60px;
 }
-.fa-instagram:hover,.fa-facebook:hover{
-  color: #F0D8B0;
+.footer-contact-title{
+  font-size: 13px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.footer-contact-icon{
+  display: flex;
+  flex-direction: column;
+  gap: 1spx;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .fixed-box {
   position: fixed;
@@ -69,8 +98,9 @@ code {
   right: 20px;  
   width: 60px;
   text-align: center; 
-  background-color: black;
-  color: white;
+  background-color: #f5f5dc;
+  color: black;
+  border: black 0.01px solid;
   padding: 10px 20px;
   border-radius: 5px;
   z-index: 9999999999999999999999999999999999999999;
@@ -178,7 +208,7 @@ button.e.navbar-toggler.collapsed{
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 15px;
-  background-color: #A3B18A;
+  background-color: #F7E7CE;
   transition: background-color 0.5s ease;
   font-family: 'Almendra Display', serif;
   color: black;
@@ -203,7 +233,7 @@ button.e.navbar-toggler.collapsed{
 
 .estimate-img{
   position: relative;
-  height: 300px;
+  height: 200px;
   background-image: url('./img/estimate1200px.jpg');
   background-size: cover;
   box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.8);
@@ -213,7 +243,7 @@ button.e.navbar-toggler.collapsed{
 .estimate-title{
   position: absolute;
   color: #F0D8B0;
-  top: 170px;
+  top: 70px;
   left: 50%;
   transform: translate(-50%,0);
   text-align: center;
@@ -389,7 +419,7 @@ p:last-child{
 }
 .contact-us-img{
   position: relative;
-  height: 300px;
+  height: 200px;
   background-image: url('./img/contactusimg.jpg');
   margin-bottom: 30px;
   background-size: cover;
