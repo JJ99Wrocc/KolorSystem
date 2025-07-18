@@ -1,17 +1,29 @@
 import React from "react";    
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation} from "react-router-dom";
 
 
 const Footer = () => {
         const navigate = useNavigate();
+        const location = useLocation();
+
+        const isEstimatePage = location.pathname === "/estimate";
     return ( 
         <footer className="ui inverted  bg-black text-white vertical segment footer " >
             <div className="ui container" style={{position:"relative"}}>
                     
-            <button className=" footer-estimate-btn"
-                        onClick={() => navigate('/estimate')}                
-                >UMÓW BEZPŁATNĄ WYCENE</button>
-                
+            {isEstimatePage ? (
+  
+   <div className="footer-estimate-img"></div>
+) : (
+    <button
+    className="footer-estimate-btn"
+    onClick={() => navigate("/estimate")}
+  >
+    UMÓW BEZPŁATNĄ WYCENĘ
+  </button>
+)}
+
+
             <div className="footer-contact">
   <p className="footer-contact-title">KONTAKT</p>
   

@@ -59,7 +59,7 @@ code {
   justify-content: center;
 align-items: center;
   transform: translate(-50%,-50%);
-  font-size: 11px;
+  font-size: 12px;
   background-color: #F5F5DC;
   transition: background-color 0.5s ease;
   font-family: 'Almendra Display', serif;
@@ -93,6 +93,20 @@ align-items: center;
   align-items: center;
   gap: 5px;
 }
+
+.footer-estimate-img{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url('./img/Malowanie\ w\ kontrastowych\ barwach.png');
+  height: 120px;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .fixed-box {
   position: fixed;
   bottom: 50px; 
