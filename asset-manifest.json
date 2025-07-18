@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.3dc503df.css",
-    "main.js": "/KolorSystem/static/js/main.9b905cd6.js",
+    "main.css": "/KolorSystem/static/css/main.c64cac60.css",
+    "main.js": "/KolorSystem/static/js/main.12aa4a27.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
     "static/media/HeaderXXL.png": "/KolorSystem/static/media/HeaderXXL.519f89781d335d013f31.png",
+    "static/media/Malowanie w kontrastowych barwach.png": "/KolorSystem/static/media/Malowanie w kontrastowych barwach.465f46cf317b4f43ef68.png",
     "static/media/referencje.png": "/KolorSystem/static/media/referencje.caef34c873fca9f8c39c.png",
     "static/media/doswiadczenie.png": "/KolorSystem/static/media/doswiadczenie.186bb60ce2c99c6520c5.png",
     "static/media/dostepnosc.png": "/KolorSystem/static/media/dostepnosc.7baaeb9fd8f43cd6256e.png",
@@ -13,12 +14,12 @@
     "static/media/contactusimg.jpg": "/KolorSystem/static/media/contactusimg.43154a52bc11087ec1af.jpg",
     "static/media/estimate1200px.jpg": "/KolorSystem/static/media/estimate1200px.7050003cd5a637106f0b.jpg",
     "index.html": "/KolorSystem/index.html",
-    "main.3dc503df.css.map": "/KolorSystem/static/css/main.3dc503df.css.map",
-    "main.9b905cd6.js.map": "/KolorSystem/static/js/main.9b905cd6.js.map",
+    "main.c64cac60.css.map": "/KolorSystem/static/css/main.c64cac60.css.map",
+    "main.12aa4a27.js.map": "/KolorSystem/static/js/main.12aa4a27.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dc503df.css",
-    "static/js/main.9b905cd6.js"
+    "static/css/main.c64cac60.css",
+    "static/js/main.12aa4a27.js"
   ]
 }
