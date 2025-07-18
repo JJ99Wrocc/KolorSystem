@@ -48,10 +48,11 @@ code {
   top: 300px;
   left: 50%;
   transform: translate(-50%); 
+  font-weight: bold;
 }
 .footer-estimate-btn{
   position: absolute;
-  top: 40px;
+  top: 55px;
   height: 65px;
   width: 50%;
   left: 50%;
@@ -505,8 +506,9 @@ p:last-child{
   }
 @media (max-width: 399px){
   .order-estimate-btn{
-    width: 38%;
-    font-size: 8px;
+    height: 65px;
+    width: 50%;
+    font-size: 12px;
   }
     .ui.inverted.vertical.segment .Copy-right{
     font-size: 8px !important ;

@@ -9,7 +9,7 @@ const OrderEstimate = () => {
             {/* <div className="order-estimate-title">  */}
                 <button className="order-estimate-btn"
                         onClick={() => navigate('/estimate')}                
-                >ZAMÓW BEZPŁATNĄ WYCENE</button>
+                >UMÓW BEZPŁATNĄ WYCENE</button>
             {/* </div> */}
         </div>
 
