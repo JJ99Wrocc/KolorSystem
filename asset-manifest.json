@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.c64cac60.css",
-    "main.js": "/KolorSystem/static/js/main.12aa4a27.js",
+    "main.css": "/KolorSystem/static/css/main.bddd7279.css",
+    "main.js": "/KolorSystem/static/js/main.2167a281.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
     "static/media/HeaderXXL.png": "/KolorSystem/static/media/HeaderXXL.519f89781d335d013f31.png",
     "static/media/Malowanie w kontrastowych barwach.png": "/KolorSystem/static/media/Malowanie w kontrastowych barwach.465f46cf317b4f43ef68.png",
@@ -10,16 +10,16 @@
     "static/media/dostepnosc.png": "/KolorSystem/static/media/dostepnosc.7baaeb9fd8f43cd6256e.png",
     "static/media/kolorsystem.png": "/KolorSystem/static/media/kolorsystem.8b3f3e834157d892a1cd.png",
     "static/media/happycliente.png": "/KolorSystem/static/media/happycliente.a07bf697797733c1c825.png",
-    "static/media/wroclaw.jpg": "/KolorSystem/static/media/wroclaw.b57c5d2bced7ca543290.jpg",
+    "static/media/river-3730558_1280.jpg": "/KolorSystem/static/media/river-3730558_1280.cfc981abda5984271fff.jpg",
     "static/media/contactusimg.jpg": "/KolorSystem/static/media/contactusimg.43154a52bc11087ec1af.jpg",
     "static/media/estimate1200px.jpg": "/KolorSystem/static/media/estimate1200px.7050003cd5a637106f0b.jpg",
     "index.html": "/KolorSystem/index.html",
-    "main.c64cac60.css.map": "/KolorSystem/static/css/main.c64cac60.css.map",
-    "main.12aa4a27.js.map": "/KolorSystem/static/js/main.12aa4a27.js.map",
+    "main.bddd7279.css.map": "/KolorSystem/static/css/main.bddd7279.css.map",
+    "main.2167a281.js.map": "/KolorSystem/static/js/main.2167a281.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c64cac60.css",
-    "static/js/main.12aa4a27.js"
+    "static/css/main.bddd7279.css",
+    "static/js/main.2167a281.js"
   ]
 }
