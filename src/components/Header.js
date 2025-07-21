@@ -4,6 +4,7 @@
 
 
 import NavBarNavConst from "./NavbarNavConst";
+import NavbarWebConst from "./NavbarWebConst";
 
 
 
@@ -15,6 +16,9 @@ import NavBarNavConst from "./NavbarNavConst";
                 <div className="header d-block d-lg-none">
             <NavBarNavConst />
     </div>
+                <div >
+                    <NavbarWebConst />
+                </div>
 
                 {/* <div className="header-img-shadow"></div> */}
             </div>

@@ -1,4 +1,4 @@
-body {
+headernavbody {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -137,6 +137,34 @@ align-items: center;
   transform: translateY(0);
   pointer-events: auto;
 }
+.navbar-web {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: 999;
+}
+
+.navbar-web.visible,
+.navbar-web.always-visible {
+  transform: translateY(0);
+  opacity: 1;
+  background-color: #fff;
+}
+.nav-web-const-links{
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  border-radius: 5%;
+}
+.navbar-nav{
+  padding: 10px 40px 10px 40px !important;
+}
+.navbar-transparent {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
 
 .navbar-container{
   display: flex;
@@ -247,6 +275,7 @@ button.e.navbar-toggler.collapsed{
 
 
 .estimate-img{
+
   position: relative;
   height: 200px;
   background-image: url('./img/estimate1200px.jpg');
@@ -320,12 +349,37 @@ button.e.navbar-toggler.collapsed{
   height: 40px;
   width: 99%;
   background-color: antiquewhite;
+  color: #5C4033;
   transition: background-color 0.5s ease;
   box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .estimate-btn:hover{
   background-color: khaki;
 }
+.estimate-form-box-in-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+.estimate-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.estimate-title-box {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.estimate-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .error-name{
   margin-left: 10px;
   font-size: 10px;
@@ -371,7 +425,7 @@ button.e.navbar-toggler.collapsed{
   font-size: 13px;
 }
 .picture-img{
-  background-image: url('./img/wroclaw.jpg');
+  background-image: url('./img/river-3730558_1280.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -552,6 +606,10 @@ p:last-child{
   .picture-p{
     font-size: 10px;
   }
+
+  .footer-contact-row{
+    font-size: 13px;
+  } 
 }
 @media(min-width: 568px) and (max-width:767px){
   .order-estimate-btn{
@@ -565,6 +623,13 @@ p:last-child{
   .picture-p{
     font-size: 15px;
   }
+  .footer-estimate-btn{
+    width: 35%;
+    font-size: 14px;
+  }
+  .footer-contact-row{
+    font-size: 13px;
+  }
 }
 @media (min-width:768px) and (max-width: 992px){
   .order-estimate-btn{
@@ -577,6 +642,13 @@ p:last-child{
   }
   .picture-p{
     font-size: 20px;
+  }
+  .footer-estimate-btn{
+    width: 35%;
+    font-size: 15px;
+  }
+  .footer-contact-row{
+    font-size: 15px;
   }
 }
 @media(min-width: 992px) and (max-width:1200px) {
@@ -658,8 +730,18 @@ p:last-child{
     flex: 1;
     min-height: 200px; 
   }
+  .estimate-img, .contact-us-img{
+    margin-top: 100px;
+  }
   .pp{
     margin-top: 10px;
+  }
+  .footer-estimate-btn{
+    width: 30%;
+    font-size: 16px;
+  }
+  .footer-contact-row{
+    font-size: 16px;
   }
 }
 @keyframes arrowUpDown{

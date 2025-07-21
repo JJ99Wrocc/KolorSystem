@@ -42,7 +42,7 @@ const Footer = () => {
 
                   
                     <div >
-                        <p className="Copy-right  ">© {new Date().getFullYear()} FlowMart. All rights reserved.</p>
+                        <p className="Copy-right  ">© {new Date().getFullYear()} KolorSystem. All rights reserved.</p>
                     </div>
                     <div  style={{position: "relative"}} >
 

@@ -3,6 +3,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../Firebase";
 import emailjs from 'emailjs-com';
 import NavBarNavConst from "./NavbarNavConst";
+import NavbarWebConst from "./NavbarWebConst";
 
 const Estimate = () => {
   const [phone, setPhone] = useState("");
@@ -13,9 +14,9 @@ const Estimate = () => {
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [address, setAddress] = useState("");
   const [isAddressValid, setIsAddressValid] = useState(false);
-  const [text, setText] = useState("");
   const [wybor, setWybor] = useState("");
   const [wybor2, setWybor2] = useState("");
+  const [metrarz1, setMetrarz1] = useState("");
   const [isConsentGiven, setIsConsentGiven] = useState(false);
 
   const validateEmail = (value) => {
@@ -50,6 +51,7 @@ const Estimate = () => {
       !isAddressValid ||
       wybor === "" ||
       wybor2 === "" ||
+      metrarz1 === ""  ||
       !isConsentGiven
     ) {
       alert("Uzupełnij poprawnie wszystkie pola i zaakceptuj zgodę.");
@@ -61,9 +63,9 @@ const Estimate = () => {
       email,
       phone,
       address,
-      text,
       wybor,
       wybor2,
+      metrarz1,
       consent: isConsentGiven,
       timestamp: new Date(),
     };
@@ -81,9 +83,9 @@ const Estimate = () => {
       setIsPhoneValid(false);
       setAddress("");
       setIsAddressValid(false);
-      setText("");
       setWybor("");
       setWybor2("");
+      setMetrarz1("");
       setIsConsentGiven(false);
     } catch (error) {
       alert("Błąd wysyłania: " + error.message);
@@ -100,9 +102,9 @@ const Estimate = () => {
         name: name,
         email: email,
         phone: phone,
-        message: text,  
         wybor: wybor,
         wybor2: wybor2,
+        metrarz1: metrarz1,
       };
     await  emailjs.send(
         "service_6clsdqg",
@@ -123,6 +125,7 @@ const Estimate = () => {
        <div className=" d-block d-lg-none">
             <NavBarNavConst />
     </div>
+    
       <div className="estimate-img">
         <div className="estimate-img-shadow"></div>
         <div className="estimate-title">WYCENA</div>
@@ -207,74 +210,114 @@ const Estimate = () => {
               <p className="error-name">Wpisz poprawny adres</p>
             )}
 
-            {/* <input
-              type="text"
-              placeholder="Powiedz nam coś więcej o Twojej nieruchomości"
-              className="estimate-input last-input"
-              value={text}
-              onChange={(e) => {setText(e.target.value)
-                          }
-                         } /> */}
           </div>
 
           <div className="estimate-form-right-box">
-            <p className="estimate-title-box">CO CHCESZ POMALOWAĆ?</p>
-            <div className="estimate-form-right1">
-              <label className="estimate-input-right">
-                <input
-                  type="radio"
-                  name="wybor"
-                  value="dom"
-                  checked={wybor === "dom"}
-                  onChange={(e) => {setWybor(e.target.value)
-                    }
-                  }
-                />
-                Dom
-              </label>
-              <br />
+          <div className="estimate-form-box-in-box">
+  {/* Lewa kolumna */}
+  <div className="estimate-column">
+    <p className="estimate-title-box">CO CHCESZ POMALOWAĆ?</p>
+    <div className="estimate-form-group">
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="wybor1"
+          value="dom"
+          checked={wybor === "dom"}
+          onChange={(e) => setWybor(e.target.value)}
+        />
+        Dom
+      </label>
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="wybor1"
+          value="mieszkanie"
+          checked={wybor === "mieszkanie"}
+          onChange={(e) => setWybor(e.target.value)}
+        />
+        Mieszkanie
+      </label>
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="wybor1"
+          value="lokal"
+          checked={wybor === "lokal"}
+          onChange={(e) => setWybor(e.target.value)}
+        />
+        Biuro
+      </label>
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="wybor1"
+          value="inne"
+          checked={wybor === "inne"}
+          onChange={(e) => setWybor(e.target.value)}
+        />
+        Inne
+      </label>
+    </div>
+  </div>
 
-              <label className="estimate-input-right">
-                <input
-                  type="radio"
-                  name="wybor"
-                  value="mieszkanie"
-                  checked={wybor === "mieszkanie"}
-                  onChange={(e) => {setWybor(e.target.value)
-                    }
-                  }
-                />
-                Mieszkanie
-              </label>
-              <br />
-
-              <label className="estimate-input-right">
-                <input
-                  type="radio"
-                  name="wybor"
-                  value="lokal"
-                  checked={wybor === "lokal"}
-                  onChange={(e) => {setWybor(e.target.value)
-                    }
-                  }
-                />
-                Biuro
-              </label>
-              <br />
-
-              <label className="estimate-input-right">
-                <input
-                  type="radio"
-                  name="wybor"
-                  value="inne"
-                  checked={wybor === "inne"}
-                  onChange={(e) => {setWybor(e.target.value)
-                    }
-                  }
-                />
-                Inne
-              </label>
-            </div>
+  {/* Prawa kolumna */}
+  <div className="estimate-column">
+    <p className="estimate-title-box">METRARZ?</p>
+    <div className="estimate-form-group">
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="metrarz1"
+          value="15 - 30 m²"
+          checked={metrarz1 === "15 - 30 m²"}
+          onChange={(e) => setMetrarz1(e.target.value)}
+        />
+        15 - 30 m²
+      </label>
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="metrarz1"
+          value="30 - 45 m²"
+          checked={metrarz1 === "30 - 45 m²"}
+          onChange={(e) => setMetrarz1(e.target.value)}
+        />
+        30 - 45 m²
+      </label>
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="metrarz1"
+          value="45 - 60 m²"
+          checked={metrarz1 === "45 - 60 m²"}
+          onChange={(e) => setMetrarz1(e.target.value)}
+        />
+        45 - 60 m²
+      </label>
+      <label className="estimate-input-right">
+        <input
+          type="radio"
+          name="metrarz1"
+          value="60 - 75 m²"
+          checked={metrarz1 === "60 - 75 m²"}
+          onChange={(e) => setMetrarz1(e.target.value)}
+        />
+        60 - 75 m²
+      </label>
+      <label className="estimate-input-right last-input">
+        <input
+          type="radio"
+          name="metrarz1"
+          value="75+ m²"
+          checked={metrarz1 === "75+ m²"}
+          onChange={(e) => setMetrarz1(e.target.value)}
+        />
+        75+ m²
+      </label>
+    </div>
+  </div>
+</div>
 
             <p className="estimate-title-box">SKĄD SIĘ O NAS DOWIEDZIAŁEŚ?</p>
             <div>

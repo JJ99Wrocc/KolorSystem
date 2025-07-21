@@ -12,7 +12,7 @@ import Picture from "./components/picture";
 // import MySwiper from "./components/MySwiper";
 import Proces from "./components/Process";
 import ContactUs from "./components/ContactUs";
-
+import NavBarNavConst from "./components/NavbarNavConst";
 
 
 
