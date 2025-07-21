@@ -23,7 +23,7 @@ const MySwiper = () => {
       >
         <SwiperSlide>
           <div className="swiper">
-            <img className="swpier-img" src={malowanie1} alt="malowanie" />
+            <img className="swpier-img" src={malowanie1} alt="malowanie"  loading="lazy"/>
           </div>
         </SwiperSlide>
         <SwiperSlide>

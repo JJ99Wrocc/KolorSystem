@@ -11,9 +11,9 @@ function NavbarWeb() {
   const location = useLocation();
 
   useEffect(() => {
-    // ✅ Tylko dla strony głównej "/"
+  
     if (location.pathname !== "/") {
-      setIsVisible(false); // resetuj widoczność
+      setIsVisible(false); 
       return;
     }
 
@@ -25,7 +25,7 @@ function NavbarWeb() {
       }
     };
 
-    handleScroll(); // dla początkowej pozycji
+    handleScroll(); 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
@@ -33,7 +33,7 @@ function NavbarWeb() {
   return (
     <Navbar
       fixed="top"
-      bg="white"
+      
       data-bs-theme="light"
       className={`d-none d-lg-block navbar-web container-fluid ${
         location.pathname === "/" ? (isVisible ? "visible" : "") : "always-visible"
@@ -41,7 +41,7 @@ function NavbarWeb() {
     >
       <Container className="d-flex justify-content-between align-items-center">
         <Navbar.Brand className="navbar" href="#home">
-          <img src={kolorsystem} className="navbarweb-image" alt="logo" />
+          <img src={kolorsystem} className="navbarweb-image" alt="logo" loading="lazy" />
         </Navbar.Brand>
         <Nav className="ms-auto nav-links staaaar">
           <Nav.Link onClick={() => navigate("/")}>Strona główna</Nav.Link>

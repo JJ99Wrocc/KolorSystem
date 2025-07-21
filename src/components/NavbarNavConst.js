@@ -26,7 +26,7 @@ const NavBarNavConst = ( ) =>{
              <Navbar expand="lg" bg="transparent" className="mobile-navbar">
         <Container fluid>
         <Navbar.Brand href="#">
-            <img className="nav-mobile-logo" src={kolorsystem} alt="KolorSystem logo" />
+            <img className="nav-mobile-logo" src={kolorsystem} alt="KolorSystem logo"  loading="lazy"/>
         </Navbar.Brand>
 
         <Navbar.Toggle

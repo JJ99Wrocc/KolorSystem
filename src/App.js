@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import NavbarWeb from "./components/Navbar";
 import NavbarMobile from "./components/NavbarMobile";
 import Headers from "./components/Header";
-import OrderEstimate from "./components/OrderEstimate";
 import Estimate from "./components/estimate";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
@@ -25,7 +24,7 @@ function LayoutWithNavAndFooter({ children }) {
       <NavbarMobile />
 
       {children}
-      {/* <Footer /> */}
+    
     </>
   );
 }
@@ -38,12 +37,9 @@ function AppRoutes(){
         element={
           <LayoutWithNavAndFooter>
             <Headers />
-            <OrderEstimate />
             <WhyUs />
             <Picture />
-           
             <Proces />
-            
           </LayoutWithNavAndFooter>
         }
       />
