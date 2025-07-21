@@ -13,7 +13,7 @@ const NavbarWebConst = () =>{
       <Container className="d-flex justify-content-between align-items-center">
         <Navbar.Brand className='navbar' href="#home">
   
-        <img src={kolorsystem} className="navbarweb-image" alt="logo" />
+        <img src={kolorsystem} className="navbarweb-image" alt="logo" loading="lazy" />
 
           </Navbar.Brand>
         <Nav className="ms-auto nav-links nav-web-const-links" >

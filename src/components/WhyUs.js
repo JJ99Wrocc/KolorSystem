@@ -38,17 +38,15 @@ const WhyUs = () => {
       img: doswiadczenie,
       title: "DOŚWIADCZENIE",
       alt: "Odznaka oznaczająca doświadczenie",
-      text: `Klienci z Wrocławia i okolic chętnie powierzają nam kolejne zlecenia malarskie i polecają nasze 
-        prace swoim znajomym. Solidne wykończenia wnętrz, szybkie terminy realizacji oraz estetyczne malowanie ścian 
-        sprawiają, że zaufało nam już wiele osób`,
+      text: `Znamy się na ścianach - i to dosłownie. Naprawiamy, wygładzamy, malujemy tak, by efekt był trwały i estetyczny.
+       Zdobywamy doświadczenie przy każdym zleceniu, dbając o jakość niezależnie od jego rozmiau`,
     },
     {
       img: happyclient,
-      title: "REFERENCJE",
+      title: "POLECENIA",
       alt: "Odznaka zadowolonego klienta",
-      text: `Zadowoleni klienci z Wrocławia i okolic regularnie powierzają nam kolejne zlecenia malarskie
-        i chętnie polecają nasze usługi znajomym. Profesjonalne malowanie mieszkań i domów, które wykonujemy, 
-        buduje naszą renomę skuteczniej niż jakakolwiek reklama`,
+      text: `Budujemy długofalowe relacje - wielu klientów wraca do nas przy kolejnych zleceniach malarskich i pracach związanych z naprawą ścian. 
+      Często polecają nas znajomym. To najlepszy dowódm że można na nas liczyć.`,
     },
     {
       img: referencje,
@@ -60,7 +58,7 @@ const WhyUs = () => {
     },
     {
       img: dostepnosc,
-      title: "DOSTĘPNOŚĆ",
+      title: "ELASTYCZNOŚĆ",
       alt: "Odznaka oznaczająca dostępność",
       text: `Skontaktuj się z nami, opowiedz, co chcesz pomalować, a my dopasujemy harmonogram tak,
         aby prace przebiegały sprawnie i bez zbędnego stresu. Szanujemy Twój czas!`,

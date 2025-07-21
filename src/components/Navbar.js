@@ -38,13 +38,12 @@ function NavbarWeb() {
       className={`d-none d-lg-block navbar-web container-fluid ${
         location.pathname === "/" ? (isVisible ? "visible" : "") : "always-visible"
       }`}
-      
     >
       <Container className="d-flex justify-content-between align-items-center">
         <Navbar.Brand className="navbar" href="#home">
           <img src={kolorsystem} className="navbarweb-image" alt="logo" />
         </Navbar.Brand>
-        <Nav className="ms-auto nav-links">
+        <Nav className="ms-auto nav-links staaaar">
           <Nav.Link onClick={() => navigate("/")}>Strona główna</Nav.Link>
           <Nav.Link onClick={() => navigate("/estimate")}>Wycena</Nav.Link>
           <Nav.Link onClick={() => navigate("/contactus")}>Kontakt</Nav.Link>

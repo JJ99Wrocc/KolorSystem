@@ -156,9 +156,10 @@ align-items: center;
   height: 50px;
   border-radius: 5%;
 }
-.navbar-nav{
-  padding: 10px 40px 10px 40px !important;
-}
+/* .navbar-nav.staaaar {
+  padding: 10px 40px 10px 40px  !important;
+} */
+
 .navbar-transparent {
   background-color: transparent !important;
   backdrop-filter: none !important;
