@@ -33,7 +33,7 @@ code {
 /* WSPÓLNE KLASY */
 .order-header-btn,.order-estimate-left-sub{
   position: absolute;
-  top: 90%;
+  top: 85%;
 }
 .estimate-img,.header-img, .contact-us-img{
   background-position: center;
@@ -326,6 +326,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   background-color: #F4F1E9;
 }
 
+
 .order-header-btn{
   height: 80px;
   width: 20%;
@@ -389,6 +390,10 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   text-shadow: 1.5px 1.5px 6px rgba(0, 0, 0, 0.4);
   letter-spacing: 1.2px;
 }
+.estimate-box, div.content, .ui.segment.estimate-form,.why-us-container,.ui.segment.why-us-segment,.ui.segment.process-container,.ui.container.ui.segment.why-us-container,.nav-mobile.visible{
+  background-color: #F4F1E9 !important;
+}
+
 .estimate-container{
   position: relative;
   text-align: center;
@@ -809,7 +814,7 @@ p:last-child{
     display: block;
     padding: 20px;
     gap: 20px;
-    background-color: white;
+    background-color: #f5e8c7;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
   }
@@ -865,7 +870,7 @@ p:last-child{
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
-    background-color: white;
+    background-color: #d8cfa9;
     box-shadow: 5px 5px 10px 10px;
     margin-bottom: 40px;
   }
