@@ -89,7 +89,9 @@ const ContactUs = () => {
            <div className=" d-block d-lg-none">
             <NavBarNavConst />
     </div>
- 
+    <div>
+      <NavbarWebConst />
+     </div>
       <div className="contact-us-img">
         <div className="contact-us-img"></div>
         <div className="contact-us-shadow"></div>

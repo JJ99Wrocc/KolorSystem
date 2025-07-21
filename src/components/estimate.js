@@ -320,9 +320,10 @@ const Estimate = () => {
 </div>
 
             <p className="estimate-title-box">SKĄD SIĘ O NAS DOWIEDZIAŁEŚ?</p>
-            <div>
+            <div className="estimate-form-group">
               <label className="estimate-input-right">
                 <input
+                  
                   type="radio"
                   name="zrodlo"
                   value="polecenie"
