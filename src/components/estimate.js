@@ -126,7 +126,7 @@ const Estimate = () => {
             <NavBarNavConst />
     </div>
     
-      <div className="estimate-img">
+      <div className="estimate-img" alt="czerwone tło" loading="lazy">
         <div className="estimate-img-shadow"></div>
         <div className="estimate-title">WYCENA</div>
       </div>

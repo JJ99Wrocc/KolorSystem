@@ -27,7 +27,7 @@ import { useNavigate } from "react-router-dom";
             })
         return( 
             <div className="wrapper">
-                <img className="header-img lg-none d-none d-lg-block" src={HeaderXXL} alt="header-img" >
+                <img className="header-img lg-none d-none d-lg-block" src={HeaderXXL} alt="header-img" fetchpriority="high" >
                 </img>
                 <button className="order-header-btn"
                         onClick={() => navigate('/estimate')}                
