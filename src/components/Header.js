@@ -1,6 +1,5 @@
     import React, { useEffect, useState } from "react";
-    // import headerimg from '../img/headerimg.png'
-    import HeaderXXL from '../img/HeaderXXL.png'
+    import HeaderXXL from '../img/HeaderXXL.webp'
 
 
 import NavBarNavConst from "./NavbarNavConst";
@@ -39,8 +38,6 @@ import { useNavigate } from "react-router-dom";
                 <div    >
                     <NavbarWebConst />
                 </div>
-
-                {/* <div className="header-img-shadow"></div> */}
             </div>
         )
     }

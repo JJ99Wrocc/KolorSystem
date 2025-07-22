@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import kolorsystem from '../img/kolorsystem.png';
+import kolorsystem from '../img/kolorsystem.webp';
 import { useNavigate, useLocation } from "react-router-dom";
 
 function NavbarWeb() {
