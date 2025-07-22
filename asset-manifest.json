@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.8a595802.css",
-    "main.js": "/KolorSystem/static/js/main.4076815f.js",
+    "main.css": "/KolorSystem/static/css/main.6b38bb7d.css",
+    "main.js": "/KolorSystem/static/js/main.eb6c6a0c.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
     "static/media/HeaderXXL.png": "/KolorSystem/static/media/HeaderXXL.519f89781d335d013f31.png",
     "static/media/Malowanie w kontrastowych barwach.png": "/KolorSystem/static/media/Malowanie w kontrastowych barwach.465f46cf317b4f43ef68.png",
@@ -14,12 +14,12 @@
     "static/media/contactusimg.jpg": "/KolorSystem/static/media/contactusimg.43154a52bc11087ec1af.jpg",
     "static/media/estimate1200px.jpg": "/KolorSystem/static/media/estimate1200px.7050003cd5a637106f0b.jpg",
     "index.html": "/KolorSystem/index.html",
-    "main.8a595802.css.map": "/KolorSystem/static/css/main.8a595802.css.map",
-    "main.4076815f.js.map": "/KolorSystem/static/js/main.4076815f.js.map",
+    "main.6b38bb7d.css.map": "/KolorSystem/static/css/main.6b38bb7d.css.map",
+    "main.eb6c6a0c.js.map": "/KolorSystem/static/js/main.eb6c6a0c.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a595802.css",
-    "static/js/main.4076815f.js"
+    "static/css/main.6b38bb7d.css",
+    "static/js/main.eb6c6a0c.js"
   ]
 }
