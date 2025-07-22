@@ -1,29 +1,22 @@
 <head>
   <meta charset="utf-8" />
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" 
+  />
   <link rel="icon" href="%PUBLIC_URL%/img/kolorsystem1.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
-  <link rel="icon" href="%PUBLIC_URL%/zdjecieZakladka.png" type="image/png" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/zdjecieZakladka.png" />
+  <link rel="icon" href="%PUBLIC_URL%/zdjecieZakladka.webp" type="image/png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/zdjecieZakladka.webp" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-  <!-- Preconnect - szybkie nawiązanie połączeń -->
+  <!-- Preconnect tylko do Google Fonts, jeśli ich używasz -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
-  <!-- CSS -->
-  <link 
-    rel="preload" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" 
-    as="style" 
-    onload="this.onload=null;this.rel='stylesheet'"
-  />
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" />
-  </noscript>
+  <!-- Załaduj Semantic UI CSS normalnie -->
 
   <title>Kolor System</title>
 </head>
@@ -31,7 +24,7 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 
-  <!-- Skrypty JS z defer (ładują się równolegle i wykonują po parsowaniu HTML) -->
+  <!-- Skrypty z defer -->
   <script defer src="https://kit.fontawesome.com/c438e7529f.js" crossorigin="anonymous"></script>
   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>

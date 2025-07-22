@@ -153,7 +153,7 @@ a.nav-link:focus,.phone,.e-mail,.footer-contact{
   top: 10px;
   left: 50%;
   transform: translate(-50%);
-  background-image: url('./img/Malowanie\ w\ kontrastowych\ barwach.png');
+  background-image: url('./img/Malowanie\ w\ kontrastowych\ barwach.webp');
   height: 120px;
   width: 50%;
   background-size: contain;
@@ -355,7 +355,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
 .estimate-img{
   position: relative;
   height: 200px;
-  background-image: url('./img/estimate1200px.jpg');
+  background-image: url('./img/ZDJECIEestamate.webp');
   background-size: cover;
 }
 
@@ -515,7 +515,7 @@ font-size: 1rem;
   margin-bottom: 18px;
 }
 .picture-img{
-  background-image: url('./img/river-3730558_1280.jpg');
+  background-image: url('./img/Most.webp');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -569,7 +569,7 @@ p:last-child{
 .contact-us-img{
   position: relative;
   height: 200px;
-  background-image: url('./img/contactusimg.jpg');
+  background-image: url('./img/ZDJĘCIE\ contactus.webp');
   margin-bottom: 30px;
   background-size: cover;
   }
