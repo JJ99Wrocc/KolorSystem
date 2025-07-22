@@ -42,7 +42,7 @@ code {
 .order-header-btn,.order-estimate-left-sub,.picture-p,.estimate-title,.estimate-img-shadow, .picture-img-shadow, .contact-us-shadow,.footer-estimate-img,.footer-contact,.footer-estimate-btn,.Copy-right {
   position: absolute;
 }
-.estimate-img,.header-img, .contact-us-img,.header,.footer-estimate-img,.swpier-img{
+.estimate-img,.header-img, .contact-us-img,.header,.footer-estimate-img{
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -64,7 +64,7 @@ code {
 }
 .footer-estimate-btn,.why-us-titles,.order-header-btn,.Copy-right,.pp,.process-titles,.picture-p,.why-us-title,.estimate-title-box,.swiper-title-box,.estimate-title
 ,.why-us-title,.estimate-title-box, .estimate-title-p, .contact-heading,.est-pp,.footer-contact,.contact-box,.estimate-btn,.estimate-form-group,a.nav-link,.footer-contact-title
-,.swiper,.estimate-title-box,.footer-contact-icon {
+,.swiper,.estimate-title-box,.footer-contact-icon,.swpier-img {
   font-weight: 600;
   font-family: 'Almendra Display', serif;
 }

@@ -3,7 +3,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../Firebase";
 import emailjs from 'emailjs-com';
 import NavBarNavConst from "./NavbarNavConst";
-import NavbarWebConst from "./NavbarWebConst";
+// import NavbarWebConst from "./NavbarWebConst";
 
 const Estimate = () => {
   const [phone, setPhone] = useState("");
@@ -126,7 +126,7 @@ const Estimate = () => {
             <NavBarNavConst />
     </div>
     
-      <div className="estimate-img" alt="czerwone tło" loading="lazy">
+      <div className="estimate-img" alt="czerwone tło" >
         <div className="estimate-img-shadow"></div>
         <div className="estimate-title">WYCENA</div>
       </div>

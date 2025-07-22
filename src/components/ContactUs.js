@@ -92,7 +92,7 @@ const ContactUs = () => {
     <div>
       <NavbarWebConst />
      </div>
-      <div className="contact-us-img" alt="niebieskie tło" loading="lazy">
+      <div className="contact-us-img" alt="niebieskie tło">
         <div className="contact-us-img"></div>
         <div className="contact-us-shadow"></div>
         <div className="estimate-title">KONTAKT</div>
