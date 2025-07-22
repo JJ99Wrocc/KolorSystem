@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.c918dd5d.css",
-    "main.js": "/KolorSystem/static/js/main.4d1f74fc.js",
+    "main.css": "/KolorSystem/static/css/main.09f87d40.css",
+    "main.js": "/KolorSystem/static/js/main.7c0e50c6.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
     "static/media/referencje.png": "/KolorSystem/static/media/referencje.caef34c873fca9f8c39c.png",
     "static/media/doswiadczenie.png": "/KolorSystem/static/media/doswiadczenie.186bb60ce2c99c6520c5.png",
@@ -10,19 +10,18 @@
     "static/media/ZDJĘCIE contactus.webp": "/KolorSystem/static/media/ZDJĘCIE contactus.0a6c3353d58410a1bc3c.webp",
     "static/media/Most.webp": "/KolorSystem/static/media/Most.d2004a2efd26b5499520.webp",
     "static/media/Malowanie w kontrastowych barwach.webp": "/KolorSystem/static/media/Malowanie w kontrastowych barwach.438e7263437d2342885a.webp",
-    "static/media/HeaderXXL.webp": "/KolorSystem/static/media/HeaderXXL.a8b1977926e55865833a.webp",
-    "static/media/HeaderXXL (3).webp": "/KolorSystem/static/media/HeaderXXL (3).173c99e9dad8a394b88e.webp",
+    "static/media/headerXL.webp": "/KolorSystem/static/media/headerXL.512587ecd867f2f60153.webp",
+    "static/media/header-L.webp": "/KolorSystem/static/media/header-L.fbd3df5f830a781db696.webp",
     "static/media/kolorsystem.webp": "/KolorSystem/static/media/kolorsystem.47fc29cb01b76c0c84f0.webp",
     "static/media/ZDJECIEestamate.webp": "/KolorSystem/static/media/ZDJECIEestamate.4e9e3c80694f5eb68d54.webp",
-    "static/media/HeaderM (2).webp": "/KolorSystem/static/media/HeaderM (2).3fd4437ff90aaa29a6d8.webp",
-    "static/media/HeaderS (1).webp": "/KolorSystem/static/media/HeaderS (1).e01f6717dfaf660021ee.webp",
+    "static/media/header-M.webp": "/KolorSystem/static/media/header-M.5a00c45705ec6038339a.webp",
     "index.html": "/KolorSystem/index.html",
-    "main.c918dd5d.css.map": "/KolorSystem/static/css/main.c918dd5d.css.map",
-    "main.4d1f74fc.js.map": "/KolorSystem/static/js/main.4d1f74fc.js.map",
+    "main.09f87d40.css.map": "/KolorSystem/static/css/main.09f87d40.css.map",
+    "main.7c0e50c6.js.map": "/KolorSystem/static/js/main.7c0e50c6.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c918dd5d.css",
-    "static/js/main.4d1f74fc.js"
+    "static/css/main.09f87d40.css",
+    "static/js/main.7c0e50c6.js"
   ]
 }
