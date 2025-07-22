@@ -35,7 +35,7 @@ const Footer = () => {
     
     <div className="footer-contact-row">
       <i className="fa-solid fa-envelope"></i>
-      <a className="footer-contact-p e-mail" href="kolor@system.pl">Email: kolor@system.pl</a>
+      <a className="footer-contact-p e-mail" href="mailto:kolor@system.pl">Email: kolor@system.pl</a>
     </div>
   </div>
 </div>

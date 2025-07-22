@@ -111,13 +111,13 @@ const ContactUs = () => {
           <div className="text">
           <div className="contact-link"><i className="fa-solid fa-phone"></i> <a 
           className="linkk" href="tel:669396328">
-              669396328
+              + 48 669396328
             </a></div>
             <div className="contact-link"><i className="fa-solid fa-envelope"></i> <a
               className="linkk"
-              href="mailto:esangbedojoachim@gmail.com"
+              href="mailto:kolor@system.pl"
             >
-              esangbedojoachim@gmail.com
+              kolor@system.pl
             </a></div>
           </div>
         </div>
@@ -193,6 +193,7 @@ const ContactUs = () => {
           <label className="estimate-info">
             <input
               type="checkbox"
+              className="checkbox"
               name="zgoda"
               value="check"
               checked={isConsentGiven}

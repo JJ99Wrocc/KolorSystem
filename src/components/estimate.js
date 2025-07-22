@@ -135,12 +135,12 @@ const Estimate = () => {
         <p className="estimate-title-p">POWIEDZ NAM CO MAMY POMALOWAĆ</p>
         <hr />
         <div className="estimate-p">
-          <div style={{ paddingBottom: "20px" }}>
+          <div style={{ paddingBottom: "20px" }} className="est-p">
             W celu otrzymania bezpłatnej, spersonalizowanej wyceny usług
             malarskich, prosimy o wypełnienie poniższego formularza lub kontakt
             telefoniczny w celu umówienia spotkania!!
           </div>
-          <p>Dziękujemy za zainteresowanie naszą ofertą :)</p>
+          <p className="est-pp">Dziękujemy za zainteresowanie naszą ofertą :)</p>
         </div>
       </div>
 
