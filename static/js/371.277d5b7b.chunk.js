@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkolorsystem=self.webpackChunkkolorsystem||[]).push([[371],{6371:(s,e,a)=>{a.r(e),a.d(e,{default:()=>i});a(5043);var c=a(579);const i=()=>(0,c.jsx)("div",{className:"picture-box",children:(0,c.jsxs)("div",{className:"picture-img",style:{position:"relative"},children:[(0,c.jsx)("div",{className:"picture-img-shadow"}),(0,c.jsx)("div",{className:"picture-p",children:"Tworzymy wn\u0119trza, kt\xf3re zachwycaj\u0105 Wroc\u0142aw"})]})})}}]);
+//# sourceMappingURL=371.277d5b7b.chunk.js.map
