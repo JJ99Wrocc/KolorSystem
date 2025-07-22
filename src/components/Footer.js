@@ -30,12 +30,12 @@ const Footer = () => {
   <div className="footer-contact-icon">
     <div className="footer-contact-row">
       <i className="fa-solid fa-phone-volume"></i>
-      <p className="footer-contact-p phone">Telefon: 123456789</p>
+      <a className="footer-contact-p phone" href="tel:+48123456789">Telefon: +48 669396328</a>
     </div>
     
     <div className="footer-contact-row">
       <i className="fa-solid fa-envelope"></i>
-      <p className="footer-contact-p e-mail">Email: cośtamcośtam@fasdas.com</p>
+      <a className="footer-contact-p e-mail" href="kolor@system.pl">Email: kolor@system.pl</a>
     </div>
   </div>
 </div>
