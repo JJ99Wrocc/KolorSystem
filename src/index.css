@@ -10,7 +10,7 @@ headernavbody {
   height: 100%;
   width: auto;
   background-color: #F4F1DE;
-  background-image: url('./img/HeaderXXL.webp');
+  background-image: url('./img/headerXL.webp');
   background-size: cover;
   }
 
@@ -682,7 +682,7 @@ p:last-child{
     font-size: 35px !important;
   }
   .header{
-    background-image: url('./img/HeaderS\ \(1\).webp') !important;
+    background-image: url('./img/header-M.webp') !important;
   }
 }
 @media (min-width:400px) and (max-width:567px) {
@@ -722,6 +722,10 @@ p:last-child{
   }
   .footer-contact-row{
     font-size: 13px;
+  }
+  .header{
+    background-image: url('./img/header-M.webp');
+    background-size: contain;
   }
 }
 @media (min-width:768px) and (max-width: 992px){
@@ -801,14 +805,11 @@ p:last-child{
     width: 50% !important;
   }
   .header{
-    background-image: url('./img/HeaderM\ \(2\).webp');
+    background-image: url('./img/header-L.webp');
   }
 }
 @media(min-width:992px){
-  /* .header-img{
-    background-image: url('./img/HeaderXXL.webp');
-    z-index: 10000000000000;
-  } */
+
   .estimate-form{
     justify-content: space-between;
     padding: 20px;
@@ -836,10 +837,13 @@ p:last-child{
   .footer-contact-row{
     font-size: 16px;
   }
+  .header{
+    background-image: url('./img/headerXL.webp');
+  }
 }
 @media (min-width: 1200px){
   .header{
-    background-image: url('./img/HeaderXXL\ \(3\).webp');
+    background-image: url('./img/headerXL.webp');
   }
 }
 @keyframes arrowUpDown{

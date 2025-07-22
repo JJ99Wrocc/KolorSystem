@@ -1,5 +1,5 @@
     import React, { useEffect, useState } from "react";
-    import HeaderXXL from '../img/HeaderXXL.webp'
+    import headerXL from "../img/headerXL.webp"
 
 
 import NavBarNavConst from "./NavbarNavConst";
@@ -26,7 +26,7 @@ import { useNavigate } from "react-router-dom";
             })
         return( 
             <div className="wrapper">
-                <img className="header-img lg-none d-none d-lg-block" src={HeaderXXL} alt="header-img" fetchpriority="high" >
+                <img className="header-img lg-none d-none d-lg-block" src={headerXL} alt="header-img" fetchpriority="high" >
                 </img>
                 <button className="order-header-btn"
                         onClick={() => navigate('/estimate')}                
