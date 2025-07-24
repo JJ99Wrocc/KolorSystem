@@ -82,7 +82,7 @@ a.nav-link:focus,.phone,.e-mail,.footer-contact{
 }
 /* WSP */
 .order-header-btn,.order-estimate-left-sub{
-  top: 88%;
+  top: 85%;
 }
 .footer{
   height: 350px;
@@ -320,6 +320,8 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   height: 100%;
   display: block;
   background-size: contain;
+  object-position: center;
+  object-fit: cover
 }
 .estimate-img-shadow, .picture-img-shadow, .contact-us-shadow {
   bottom: 0;
@@ -676,9 +678,10 @@ p:last-child{
   }
 @media (max-width: 399px){
   .order-header-btn{
-    height: 65px;
+    top: 80%;
+    height: 80px;
     width: 50%;
-    font-size: 12px;
+    font-size: 11px;
   }
     .ui.inverted.vertical.segment .Copy-right{
     font-size: 8px !important ;
@@ -693,6 +696,7 @@ p:last-child{
 }
 @media (min-width:400px) and (max-width:567px) {
   .order-header-btn{
+    top: 80%;
     width: 32%;
     font-size: 8px;
   }
@@ -843,12 +847,9 @@ p:last-child{
 
 }
 @media(min-width:1200px){
-  .header-img {
-    margin-top: -50px;
-    height: 130%;
-  }
+
   .order-header-btn{
-    top: 75%;
+    top: 85%;
   }
 }
 
