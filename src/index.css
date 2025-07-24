@@ -6,14 +6,6 @@ headernavbody {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.header{
-  height: 100%;
-  width: auto;
-  background-color: #F4F1DE;
-  background-image: url('./img/headerXL.webp');
-  background-size: cover;
-  }
-
 .ui.segment:first-child{
   margin-top: 15px;
 }
@@ -175,6 +167,22 @@ a.nav-link:focus,.phone,.e-mail,.footer-contact{
   color: white;
   transform: scale(1.1);
 }
+.fixed-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+a:hover .fixed-box::after {
+  transform: translate(-50%, -50%) scale(1.5);
+}
 .d-lg-block{
   background-color: transparent; 
   backdrop-filter: blur(10px);
@@ -309,7 +317,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
 }
 .header-img {
   width: 100%;
-  height: 730px;
+  height: 100%;
   display: block;
   background-size: contain;
 }
@@ -681,9 +689,7 @@ p:last-child{
   .estimate-title{
     font-size: 35px !important;
   }
-  .header{
-    background-image: url('./img/header-M.webp') !important;
-  }
+
 }
 @media (min-width:400px) and (max-width:567px) {
   .order-header-btn{
@@ -723,10 +729,7 @@ p:last-child{
   .footer-contact-row{
     font-size: 13px;
   }
-  .header{
-    background-image: url('./img/header-M.webp');
-    background-size: contain;
-  }
+
 }
 @media (min-width:768px) and (max-width: 992px){
   .order-header-btn{
@@ -804,8 +807,8 @@ p:last-child{
   .offcanvas.offcanvas-end{
     width: 50% !important;
   }
-  .header{
-    background-image: url('./img/header-L.webp');
+  .header-img{
+    margin-top: -104px;
   }
 }
 @media(min-width:992px){
@@ -837,18 +840,23 @@ p:last-child{
   .footer-contact-row{
     font-size: 16px;
   }
-  .header{
-    background-image: url('./img/headerXL.webp');
+
+}
+@media(min-width:1200px){
+  .header-img {
+    margin-top: -50px;
+    height: 130%;
+  }
+  .order-header-btn{
+    top: 75%;
   }
 }
-@media (min-width: 1200px){
-  .header{
-    background-image: url('./img/headerXL.webp');
-  }
-}
+
 @keyframes arrowUpDown{
   0%   { transform: translateY(0); }
   50%  { transform: translateY(5px); }
 
 }
+
+
 
