@@ -709,7 +709,7 @@ p:last-child{
 }
 @media (min-width:400px) and (max-width:567px) {
   .order-header-btn{
-    top: 76%;
+    top: 80%;
     width: 32%;
     font-size: 8px;
   }
@@ -731,7 +731,6 @@ p:last-child{
   .order-header-btn{
     width: 28%;
     font-size: 10px;
-    top: 76%;
   }
 
   .ui.inverted.vertical.segment .Copy-right{
@@ -748,7 +747,7 @@ p:last-child{
     font-size: 13px;
   }
   .order-header-btn{
-    top: 76%;
+    top: 82%;
   }
 }
 @media (min-width:768px) and (max-width: 992px){
@@ -831,7 +830,7 @@ p:last-child{
     width: 50% !important;
   }
   .header-img{
-    margin-top: -104px;
+    margin-top: -135px;
     height: 100vh;
   }
 
