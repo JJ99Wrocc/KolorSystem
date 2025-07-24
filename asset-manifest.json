@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.322c86e2.css",
+    "main.css": "/KolorSystem/static/css/main.2e328605.css",
     "main.js": "/KolorSystem/static/js/main.cfaa6f66.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
     "static/media/ZDJĘCIE contactus.webp": "/KolorSystem/static/media/ZDJĘCIE contactus.0a6c3353d58410a1bc3c.webp",
@@ -16,12 +16,12 @@
     "static/media/headerM.webp": "/KolorSystem/static/media/headerM.5a00c45705ec6038339a.webp",
     "static/media/dostepnosc.avif": "/KolorSystem/static/media/dostepnosc.b97bfd6fcdb2e4ea7ed3.avif",
     "index.html": "/KolorSystem/index.html",
-    "main.322c86e2.css.map": "/KolorSystem/static/css/main.322c86e2.css.map",
+    "main.2e328605.css.map": "/KolorSystem/static/css/main.2e328605.css.map",
     "main.cfaa6f66.js.map": "/KolorSystem/static/js/main.cfaa6f66.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.322c86e2.css",
+    "static/css/main.2e328605.css",
     "static/js/main.cfaa6f66.js"
   ]
 }
