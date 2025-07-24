@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import NavBarNavConst from "./NavbarNavConst";
 import NavbarWebConst from "./Navbar";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../Firebase";
 
 import emailjs from 'emailjs-com';
 const ContactUs = () => {
@@ -27,7 +29,6 @@ const ContactUs = () => {
     const phoneRegex = /^[0-9]{9}$/;
     setIsPhoneValid(phoneRegex.test(value));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
   
@@ -48,23 +49,29 @@ const ContactUs = () => {
       phone,
       text,
       consent: isConsentGiven,
-    };
-  
-    const templateParams = {
-      name,
-      email,
-      phone,
-      message: text,
+      timestamp: new Date(),
     };
   
     try {
-      // EmailJS wysyłka
+      // Zapis do Firestore
+      await addDoc(collection(db, "estimates"), dataToSend);
+  
+      // Wysyłka emaila przez EmailJS
+      const templateParams = {
+        name,
+        email,
+        phone,
+        text,
+        consent: isConsentGiven,
+      };
+  
       const result = await emailjs.send(
         "service_6clsdqg",
         "template_t33wcuk",
         templateParams,
         "b0kSQQdQ70kSaSPcg"
       );
+  
       console.log("E-mail wysłany:", result.text);
   
       // Reset formularza
@@ -79,7 +86,7 @@ const ContactUs = () => {
   
       alert("Dziękujemy, wiadomość została wysłana. Odpowiemy w ciągu 24 godzin");
     } catch (error) {
-      console.error("Błąd wysyłania e-maila:", error);
+      console.error("Błąd przy wysyłaniu formularza:", error);
       alert("Błąd przy wysyłaniu formularza.");
     }
   };

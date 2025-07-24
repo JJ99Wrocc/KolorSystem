@@ -6,7 +6,7 @@ import zadowolony from "../img/zadowolony.avif";
 import dostepnosc from "../img/dostepnosc.avif";
 
 const WhyUs = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 992);
+  const [, setIsLargeScreen] = useState(window.innerWidth >= 992);
 
   useEffect(() => {
     const handleResize = () => setIsLargeScreen(window.innerWidth >= 992);

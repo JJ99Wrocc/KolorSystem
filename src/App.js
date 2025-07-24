@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import NavbarWeb from "./components/Navbar";
 import NavbarMobile from "./components/NavbarMobile";
@@ -11,7 +11,7 @@ import Picture from "./components/picture";
 // import MySwiper from "./components/MySwiper";
 import Proces from "./components/Process";
 import ContactUs from "./components/ContactUs";
-import NavBarNavConst from "./components/NavbarNavConst";
+
 
 
 

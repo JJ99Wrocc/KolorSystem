@@ -9,7 +9,7 @@ import NavbarWebConst from "./NavbarWebConst";
 import { useNavigate } from "react-router-dom";
 
 const Headers = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [ , setIsVisible] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
