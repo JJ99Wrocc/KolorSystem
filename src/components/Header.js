@@ -39,7 +39,7 @@ const Headers = () => {
         className="header-img d-block d-lg-none"
         src={headerM}
         alt="header-m"
-        fetchpriority="auto"
+        fetchpriority="high"
         loading="eager"
       />
       
@@ -48,14 +48,14 @@ const Headers = () => {
         src={headerXL}
         alt="header-xl"
          fetchpriority="auto"
-         loading="eager"
+         loading="lazy"
       />
       <img 
       className=" header-img d-none d-xl-block"
       src={headerXXL}
       alt="header-xxl"
        fetchpriority="auto"
-              loading="eager"
+              loading="lazy"
              
       />
 
