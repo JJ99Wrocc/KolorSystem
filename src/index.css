@@ -705,7 +705,7 @@ p:last-child{
 }
 @media (min-width:400px) and (max-width:567px) {
   .order-header-btn{
-    top: 80%;
+    top: 75%;
     width: 32%;
     font-size: 8px;
   }
