@@ -39,7 +39,7 @@ const Headers = () => {
         className="header-img d-block d-lg-none"
         src={headerM}
         alt="header-m"
-        fetchpriority="high"
+        fetchpriority="auto"
         loading="eager"
       />
       
@@ -47,15 +47,15 @@ const Headers = () => {
         className="header-img d-none d-lg-block d-xl-none"
         src={headerXL}
         alt="header-xl"
-        fetchpriority="auto"
-        loading="lazy"
+         fetchpriority="auto"
+         loading="eager"
       />
       <img 
       className=" header-img d-none d-xl-block"
       src={headerXXL}
       alt="header-xxl"
-     fetchpriority="auto"
-        loading="lazy"
+              loading="eager"
+              loading="eager"
       />
 
 <motion.button
