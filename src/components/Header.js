@@ -54,8 +54,9 @@ const Headers = () => {
       className=" header-img d-none d-xl-block"
       src={headerXXL}
       alt="header-xxl"
+       fetchpriority="auto"
               loading="eager"
-              loading="eager"
+             
       />
 
 <motion.button

@@ -119,7 +119,7 @@ a.nav-link:focus,.phone,.e-mail,.footer-contact{
   margin-top: 20px;
 }
 .phone,.e-mail{
-  color: #bfa14b;
+  color: #6b5e3c;
   margin-bottom: 5px;
   transition: color  0.3s ;
 }
@@ -858,11 +858,11 @@ p:last-child{
 }
 @media(min-width:1200px){
 
-  /* .header-img{
+  .header-img{
     margin-top: -65px;
-  } */
+  }
   .order-header-btn{
-    top: 80%;
+    top: 85%;
   }
 }
 
