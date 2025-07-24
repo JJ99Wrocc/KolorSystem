@@ -39,20 +39,23 @@ const Headers = () => {
         className="header-img d-block d-lg-none"
         src={headerM}
         alt="header-m"
-        fetchpriority="eager"
+        fetchpriority="high"
+        loading="eager"
       />
       
       <img
         className="header-img d-none d-lg-block d-xl-none"
         src={headerXL}
         alt="header-xl"
-        fetchpriority="eager"
+        fetchpriority="auto"
+        loading="lazy"
       />
       <img 
       className=" header-img d-none d-xl-block"
       src={headerXXL}
       alt="header-xxl"
-      fetchpriority="eager"
+     fetchpriority="auto"
+        loading="lazy"
       />
 
 <motion.button
