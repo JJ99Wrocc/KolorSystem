@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import headerM from "../img/headerM.webp";
-import headerL  from "../img/headerL.webp"
 import headerXL from "../img/headerXL.webp";
 import headerXXL from '../img/headerXXL.webp'
 
@@ -18,7 +17,7 @@ const Headers = () => {
       setIsVisible(window.scrollY < 99);
     };
 
-    handleScroll(); // uruchom na start
+    handleScroll(); 
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -43,7 +42,7 @@ const Headers = () => {
         alt="header-m"
         fetchpriority="high"
       />
-    
+      
       <img
         className="header-img d-none d-lg-block d-xl-none"
         src={headerXL}
@@ -63,12 +62,11 @@ const Headers = () => {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 1, delay: 0.3 }}
-  
 >
   UMÓW BEZPŁATNĄ WYCENĘ
 </motion.button>
 
-      {/* Nawigacja mobilna */}
+
     </div>
   );
 };

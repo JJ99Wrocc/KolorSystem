@@ -1,12 +1,9 @@
-import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-
-import referencje from "../img/referencje.png";
-import doswiadczenie from "../img/doswiadczenie.png";
-import happyclient from "../img/happycliente.png";
-import dostepnosc from "../img/dostepnosc.png";
+import profesjonalizm from '../img/profesjonalizm.avif'
+import doświadczenie from "../img/doświadczenie.avif";
+import zadowolony from "../img/zadowolony.avif";
+import dostepnosc from "../img/dostepnosc.avif";
 
 const WhyUs = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 992);
@@ -17,39 +14,23 @@ const WhyUs = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const motionVariants = (index) => {
-    if (isLargeScreen) {
-      // Na ekranach ≥992px: z dołu lub z góry
-      return {
-        hidden: { opacity: 0, y: index % 2 === 0 ? 100 : -100 },
-        visible: { opacity: 1, y: 0 },
-      };
-    } else {
-      // Na ekranach <992px: z lewej lub z prawej
-      return {
-        hidden: { opacity: 0, x: index % 2 === 0 ? -100 : 100 },
-        visible: { opacity: 1, x: 0 },
-      };
-    }
-  };
-
   const data = [
     {
-      img: doswiadczenie,
+      img: doświadczenie,
       title: "DOŚWIADCZENIE",
       alt: "Odznaka oznaczająca doświadczenie",
       text: `Znamy się na ścianach - i to dosłownie. Naprawiamy, wygładzamy, malujemy tak, by efekt był trwały i estetyczny.
        Zdobywamy doświadczenie przy każdym zleceniu, dbając o jakość niezależnie od jego rozmiau`,
     },
     {
-      img: happyclient,
+      img: zadowolony,
       title: "POLECENIA",
       alt: "Odznaka zadowolonego klienta",
       text: `Budujemy długofalowe relacje - wielu klientów wraca do nas przy kolejnych zleceniach malarskich i pracach związanych z naprawą ścian. 
       Często polecają nas znajomym. To najlepszy dowódm że można na nas liczyć.`,
     },
     {
-      img: referencje,
+      img: profesjonalizm,
       title: "PROFESJONALIZM",
       alt: "Odznaka profesjonalizmu",
       text: `Działamy z pełnym zaangażowaniem, realizując najwyższe standardy jakości. Nasza praca przebiega zgodnie 
@@ -67,19 +48,14 @@ const WhyUs = () => {
 
   return (
     <>
-      <div className="why-us-title" style={{overflowX:"auto"}}>DLACZEGO MY?</div>
+      <div className="why-us-title" style={{ overflowX: "auto" }}>DLACZEGO MY?</div>
       <hr className="line" />
       <div className="ui container segment why-us-container">
         <div className="row why-us-row">
           {data.map((item, index) => (
-            <motion.div
+            <div
               key={index}
               className="col-sm-12 col-md-6 col-lg-3 ui segment why-us-segment"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              variants={motionVariants(index)}
             >
               <span>
                 <img
@@ -91,7 +67,7 @@ const WhyUs = () => {
               <div className="why-us-titles">{item.title}</div>
               <hr className="line" />
               <p className="why-us-p">{item.text}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const processData = [
   {
@@ -42,31 +41,23 @@ const processData = [
 
 const Proces = () => {
   return (
-    <div className="process" style={{overflowX:"auto"}}>
+    <div className="process" style={{ overflowX: "auto" }}>
       <div className="container ui segment process-container">
         <div className="estimate-title-box">PRZEBIEG WSPÓŁPRACY</div>
         <hr className="line" />
 
         {processData.map((item, index) => (
-          <motion.div
-            className="process-box"
-            key={index}
-            initial={{
-              opacity: 0,
-              x: index % 2 === 0 ? -100 : 100,
-            }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 + index * 0.2 }}
-          >
+          <div className="process-box" key={index}>
             <p className="process-titles">
               <i className={`fa-solid ${item.icon}`}></i> {item.title}
             </p>
             <p className="process-p">{item.text}</p>
             {index !== processData.length - 1 && (
-      <div className="arrow-down"><i className="fa-solid fa-arrow-down"></i></div>
-    )}
-          </motion.div>
+              <div className="arrow-down">
+                <i className="fa-solid fa-arrow-down"></i>
+              </div>
+            )}
+          </div>
         ))}
       </div>
     </div>

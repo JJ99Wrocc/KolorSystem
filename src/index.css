@@ -319,7 +319,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   width: 100%;
   height: 100%;
   display: block;
-  background-size: contain;
+  background-size: cover;
   object-position: center;
   object-fit: cover
 }
@@ -821,6 +821,7 @@ p:last-child{
   .header-img{
     margin-top: -104px;
   }
+
 }
 @media(min-width:992px){
 
@@ -855,6 +856,9 @@ p:last-child{
 }
 @media(min-width:1200px){
 
+  /* .header-img{
+    margin-top: -65px;
+  } */
   .order-header-btn{
     top: 85%;
   }
@@ -865,6 +869,3 @@ p:last-child{
   50%  { transform: translateY(5px); }
 
 }
-
-
-
