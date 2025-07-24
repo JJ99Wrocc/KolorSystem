@@ -39,7 +39,7 @@ function NavbarMobile() {
       bg="white"
       expand={expand}
       className={`d-block d-lg-none nav-mobile ${isVisible ? 'visible' : ''}`}
-      style={{zIndex:'99999999999'}}
+      style={{zIndex:'2'}}
     >
       <Container fluid>
         <Navbar.Brand href="#">

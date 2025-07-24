@@ -119,12 +119,12 @@ a.nav-link:focus,.phone,.e-mail,.footer-contact{
   margin-top: 20px;
 }
 .phone,.e-mail{
-  color: #6b5e3c;
+  color: #bfa14b;
   margin-bottom: 5px;
   transition: color  0.3s ;
 }
 .phone:hover,.e-mail:hover{
-  color: #8a7d57;
+  color: #bfa14b;
   transform: scale(1.02);
 }
 .footer-contact svg {
@@ -337,7 +337,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   filter: blur(8px);
-  z-index: 0;
+  z-index: 0.1;
 }
 .header-shadow{
   background: rgba(0, 0, 0, 0.3) !important;
