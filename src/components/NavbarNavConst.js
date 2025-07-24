@@ -23,7 +23,8 @@ const NavBarNavConst = ( ) =>{
     const handleShow = () => setShow(true);
      return (
         <div>
-             <Navbar expand="lg" bg="transparent" className="mobile-navbar">
+             <Navbar expand="lg" bg="transparent" className="mobile-navbar"
+                   style={{zIndex:'99999999999'}}>
         <Container fluid>
         <Navbar.Brand href="#">
             <img className="nav-mobile-logo" src={kolorsystem} alt="KolorSystem logo"  loading="lazy"/>

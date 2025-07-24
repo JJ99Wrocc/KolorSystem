@@ -35,7 +35,6 @@ const Headers = () => {
       <div>
         <NavbarWebConst />
       </div>
-
         <img
         className="header-img d-block d-lg-none"
         src={headerM}
@@ -67,6 +66,7 @@ const Headers = () => {
 </motion.button>
 
 
+<div className="header-shadow"> </div>
     </div>
   );
 };
