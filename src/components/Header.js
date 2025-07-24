@@ -39,7 +39,7 @@ const Headers = () => {
         className="header-img d-block d-lg-none"
         src={headerM}
         alt="header-m"
-        fetchpriority="high"
+        fetchpriority="auto"
         loading="eager"
       />
       
