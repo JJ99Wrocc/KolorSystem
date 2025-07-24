@@ -35,20 +35,28 @@ const Headers = () => {
       <div>
         <NavbarWebConst />
       </div>
-      <picture>
-  <source
-    srcSet={`${headerXXL} 1920w, ${headerXL} 1024w, ${headerM} 480w`}
-    sizes="(min-width: 1200px) 1920px, (min-width: 992px) 1024px, 480px"
-  />
-  <img
-    src={headerM}
-    alt="header"
-    loading="eager"
-    fetchpriority="high"
-    className="header-img"
-  />
-</picture>
-
+        <img
+        className="header-img d-block d-lg-none"
+        src={headerM}
+        alt="header-m"
+        fetchpriority="high"
+        loading="eager"
+      />
+      
+      <img
+        className="header-img d-none d-lg-block d-xl-none"
+        src={headerXL}
+        alt="header-xl"
+        fetchpriority="auto"
+        loading="lazy"
+      />
+      <img 
+      className=" header-img d-none d-xl-block"
+      src={headerXXL}
+      alt="header-xxl"
+     fetchpriority="auto"
+        loading="lazy"
+      />
 
 <motion.button
   className="order-header-btn"
