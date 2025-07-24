@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/KolorSystem/static/css/main.8dc5ae17.css",
-    "main.js": "/KolorSystem/static/js/main.7c21b107.js",
+    "main.css": "/KolorSystem/static/css/main.a53be84c.css",
+    "main.js": "/KolorSystem/static/js/main.d63a7c7e.js",
     "static/js/453.e93f6786.chunk.js": "/KolorSystem/static/js/453.e93f6786.chunk.js",
-    "static/media/referencje.png": "/KolorSystem/static/media/referencje.caef34c873fca9f8c39c.png",
-    "static/media/doswiadczenie.png": "/KolorSystem/static/media/doswiadczenie.186bb60ce2c99c6520c5.png",
-    "static/media/dostepnosc.png": "/KolorSystem/static/media/dostepnosc.7baaeb9fd8f43cd6256e.png",
-    "static/media/happycliente.png": "/KolorSystem/static/media/happycliente.a07bf697797733c1c825.png",
     "static/media/ZDJĘCIE contactus.webp": "/KolorSystem/static/media/ZDJĘCIE contactus.0a6c3353d58410a1bc3c.webp",
     "static/media/Most.webp": "/KolorSystem/static/media/Most.d2004a2efd26b5499520.webp",
     "static/media/Malowanie w kontrastowych barwach.webp": "/KolorSystem/static/media/Malowanie w kontrastowych barwach.438e7263437d2342885a.webp",
     "static/media/headerXXL.webp": "/KolorSystem/static/media/headerXXL.cb370af0ed00b7367bdf.webp",
     "static/media/headerXL.webp": "/KolorSystem/static/media/headerXL.512587ecd867f2f60153.webp",
-    "static/media/headerL.webp": "/KolorSystem/static/media/headerL.fbd3df5f830a781db696.webp",
+    "static/media/zadowolony.avif": "/KolorSystem/static/media/zadowolony.7dd9ba4908fb287f57f1.avif",
+    "static/media/profesjonalizm.avif": "/KolorSystem/static/media/profesjonalizm.ae7b8d6a8d19d4dce934.avif",
     "static/media/kolorsystem.webp": "/KolorSystem/static/media/kolorsystem.47fc29cb01b76c0c84f0.webp",
+    "static/media/doświadczenie.avif": "/KolorSystem/static/media/doświadczenie.e4c903c40b79b2e062d9.avif",
     "static/media/ZDJECIEestamate.webp": "/KolorSystem/static/media/ZDJECIEestamate.4e9e3c80694f5eb68d54.webp",
     "static/media/headerM.webp": "/KolorSystem/static/media/headerM.5a00c45705ec6038339a.webp",
+    "static/media/dostepnosc.avif": "/KolorSystem/static/media/dostepnosc.b97bfd6fcdb2e4ea7ed3.avif",
     "index.html": "/KolorSystem/index.html",
-    "main.8dc5ae17.css.map": "/KolorSystem/static/css/main.8dc5ae17.css.map",
-    "main.7c21b107.js.map": "/KolorSystem/static/js/main.7c21b107.js.map",
+    "main.a53be84c.css.map": "/KolorSystem/static/css/main.a53be84c.css.map",
+    "main.d63a7c7e.js.map": "/KolorSystem/static/js/main.d63a7c7e.js.map",
     "453.e93f6786.chunk.js.map": "/KolorSystem/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dc5ae17.css",
-    "static/js/main.7c21b107.js"
+    "static/css/main.a53be84c.css",
+    "static/js/main.d63a7c7e.js"
   ]
 }
