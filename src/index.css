@@ -163,7 +163,7 @@ a.nav-link:focus,.phone,.e-mail,.footer-contact{
   width: 45px;
   height: 45px;
   box-shadow: 0 2px 6px rgba(201, 183, 122, 0.5);
-  z-index: 1000;
+  z-index: 1;
 }
 .fixed-box:hover{
   background-color: #c9b77a; 
@@ -193,8 +193,11 @@ a:hover .fixed-box::after {
 .nav-mobile {
     transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
-  z-index: 1000000000;
+  z-index: 1;
   overflow-x: hidden; 
+}
+button.e.navbar-toggler{
+  z-index: 1;
 }
 
 .nav-mobile, .navbar-web{
@@ -235,6 +238,7 @@ a:hover .fixed-box::after {
 }
 .offcanvas-body,.offcanvas-header,.pe-3{
   background-color: #faf4e6;
+  z-index: 2 !important;
 }
 
 
@@ -305,7 +309,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1030;
+  z-index: 1;
 }
 
 .offcanvas-backdrop {
@@ -357,7 +361,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   left: 50%;
   transform: translate(-50%,-50%);
   transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  z-index: 11111;
+  z-index: 1;
 }
 
 
@@ -822,6 +826,10 @@ p:last-child{
   }
   .header-img{
     margin-top: -104px;
+    height: 100vh;
+  }
+  .order-header-btn{
+    top: 85%;
   }
 
 }
@@ -856,13 +864,23 @@ p:last-child{
   }
 
 }
+@media(min-width: 1000px){
+  .header-img{
+    
+    height: 100vh;
+  }
+  .order-header-btn{
+    top: 82%;
+  }
+}
 @media(min-width:1200px){
 
   .header-img{
-    margin-top: -65px;
+    margin-top: -80px;
+    height: 120vh;
   }
   .order-header-btn{
-    top: 85%;
+    top: 82%;
   }
 }
 
