@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import headerM from "../img/headerM.webp";
 import headerL  from "../img/headerL.webp"
@@ -23,18 +24,20 @@ const Headers = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
+
   return (
     <div className="wrapper hero-wrapper">
       <div className="header d-block d-lg-none">
         <NavBarNavConst />
       </div>
 
-      {/* Nawigacja desktopowa */}
       <div>
         <NavbarWebConst />
       </div>
-      {/* Zdjęcia dla desktop / mobile */}
-      <img
+
+        <img
         className="header-img d-block d-lg-none"
         src={headerM}
         alt="header-m"
@@ -54,13 +57,16 @@ const Headers = () => {
       fetchpriority="high"
       />
 
-      {/* Przycisk */}
-      <button
-        className="order-header-btn"
-        onClick={() => navigate("/estimate")}
-      >
-        UMÓW BEZPŁATNĄ WYCENĘ
-      </button>
+<motion.button
+  className="order-header-btn"
+  onClick={() => navigate('/estimate')}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1, delay: 0.3 }}
+  
+>
+  UMÓW BEZPŁATNĄ WYCENĘ
+</motion.button>
 
       {/* Nawigacja mobilna */}
     </div>

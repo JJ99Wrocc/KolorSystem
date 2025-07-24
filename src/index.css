@@ -39,7 +39,7 @@ code {
   background-position: center;
   background-repeat: no-repeat;
 }
-.picture-p,.footer-estimate-btn,.order-header-btn{
+.picture-p,.footer-estimate-btn{
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -348,8 +348,12 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   border: 2px solid #ddd0a3; 
   border-radius: 8px;       
   font-size: 1rem;
+  left: 50%;
+  transform: translate(-50%,-50%);
   transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
+
+
 
 .order-estimate-left-sub{
   left: 32%;
