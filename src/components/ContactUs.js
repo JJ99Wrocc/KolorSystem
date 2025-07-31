@@ -53,10 +53,10 @@ const ContactUs = () => {
     };
   
     try {
-      // Zapis do Firestore
+
       await addDoc(collection(db, "estimates"), dataToSend);
   
-      // Wysyłka emaila przez EmailJS
+     
       const templateParams = {
         name,
         email,
