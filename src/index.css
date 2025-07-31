@@ -329,6 +329,13 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   background-size: cover;
   object-position: center;
 }
+.hero-wrapper{
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .estimate-img-shadow, .picture-img-shadow, .contact-us-shadow ,.header-shadow {
   bottom: 0;
