@@ -3,6 +3,11 @@ import React, { useEffect, useState } from "react";
 import headerM from "../img/headerM.webp";
 import headerXL from "../img/headerXL.webp";
 import headerXXL from '../img/headerXXL.webp'
+import { Helmet } from "react-helmet";
+
+
+
+
 
 import NavBarNavConst from "./NavbarNavConst";
 import NavbarWebConst from "./NavbarWebConst";
@@ -28,6 +33,9 @@ const Headers = () => {
 
   return (
     <div className="wrapper hero-wrapper">
+      <Helmet>
+  <link rel="preload" as="image" href={headerM} />
+</Helmet>
       <div className="header d-block d-lg-none">
         <NavBarNavConst />
       </div>
