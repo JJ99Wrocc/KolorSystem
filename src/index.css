@@ -333,8 +333,9 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   aspect-ratio: 16 / 9;
   object-fit: contain;
   width: 100%;
-  height: auto;
+  height: 95vh;
   display: block;
+  overflow-y: hidden;
 }
 
 .estimate-img-shadow, .picture-img-shadow, .contact-us-shadow ,.header-shadow {
