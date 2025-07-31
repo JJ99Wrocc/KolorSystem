@@ -328,8 +328,8 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   display: block;
   background-size: cover;
   object-position: center;
-  object-fit: cover
 }
+
 .estimate-img-shadow, .picture-img-shadow, .contact-us-shadow ,.header-shadow {
   bottom: 0;
   left: 0;
