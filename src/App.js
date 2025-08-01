@@ -68,7 +68,7 @@ function AppRoutes(){
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/KolorSystem">
+      <BrowserRouter >
       <div className="content">
           <AppRoutes />
         </div>
