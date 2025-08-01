@@ -1,7 +1,7 @@
 {
     "name": "kolorsystem",
     "version": "0.1.0",
-    "homepage": "https://kolorsystem.pl",
+    "homepage": "https://kolorsystem.pl/",
     "private": true,
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
