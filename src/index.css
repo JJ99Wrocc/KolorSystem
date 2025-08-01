@@ -614,7 +614,8 @@ p:last-child{
 .contact-us-img{
   position: relative;
   height: 200px;
-  background-image: url('./img/ZDJĘCIE/ contactus.webp');
+  background-image: url('./img/zdjecie/contactus.webp');
+
   margin-bottom: 30px;
   background-size: cover;
   }
