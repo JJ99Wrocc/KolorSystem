@@ -4,6 +4,7 @@ import headerM from "../img/headerM.webp";
 import headerXL from "../img/headerXL.webp";
 import headerXXL from '../img/headerXXL.webp'
 import { Helmet } from "react-helmet";
+import brush from '../img/brush.svg'
 
 
 
@@ -35,6 +36,13 @@ const Headers = () => {
     <div className="wrapper hero-wrapper">
 
       <h1 className="hero-h1">KOLOR SYSTEM</h1>
+      <h3 className="hero-h3">Malowanie wnętrz</h3>
+      <span className="hero-paint">  </span>
+      <span className="hero-paint dot1">  </span>
+      <span className="hero-paint dot2">  </span>
+     <img className="hero-brush" src={brush} />
+     <img className="hero-brush brush1" src={brush} />
+      <span className="hero-paint dot3">  </span>
       {/* <Helmet>
   <link rel="preload" as="image" href={headerM} />
 </Helmet> */}
