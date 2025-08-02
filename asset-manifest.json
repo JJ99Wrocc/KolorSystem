@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.a42529bf.css",
-    "main.js": "/static/js/main.5c24cdf6.js",
+    "main.css": "/static/css/main.ddaaacaf.css",
+    "main.js": "/static/js/main.63ab8667.js",
     "static/js/453.e93f6786.chunk.js": "/static/js/453.e93f6786.chunk.js",
+    "static/media/brush.svg": "/static/media/brush.cc373be6f42a4c4d95af8feead82d0f4.svg",
     "static/media/ZDJĘCIE contactus.webp": "/static/media/ZDJĘCIE contactus.0a6c3353d58410a1bc3c.webp",
     "static/media/Most.webp": "/static/media/Most.d2004a2efd26b5499520.webp",
     "static/media/Malowanie w kontrastowych barwach.webp": "/static/media/Malowanie w kontrastowych barwach.438e7263437d2342885a.webp",
@@ -16,12 +17,13 @@
     "static/media/headerM.webp": "/static/media/headerM.5a00c45705ec6038339a.webp",
     "static/media/dostepnosc.avif": "/static/media/dostepnosc.b97bfd6fcdb2e4ea7ed3.avif",
     "index.html": "/index.html",
-    "main.a42529bf.css.map": "/static/css/main.a42529bf.css.map",
-    "main.5c24cdf6.js.map": "/static/js/main.5c24cdf6.js.map",
+    "static/media/brush-pattern.svg": "/static/media/brush-pattern.518b4151188f1ae70719.svg",
+    "main.ddaaacaf.css.map": "/static/css/main.ddaaacaf.css.map",
+    "main.63ab8667.js.map": "/static/js/main.63ab8667.js.map",
     "453.e93f6786.chunk.js.map": "/static/js/453.e93f6786.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a42529bf.css",
-    "static/js/main.5c24cdf6.js"
+    "static/css/main.ddaaacaf.css",
+    "static/js/main.63ab8667.js"
   ]
 }
