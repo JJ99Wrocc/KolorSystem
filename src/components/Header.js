@@ -35,17 +35,10 @@ const Headers = () => {
   return (
     <div className="wrapper hero-wrapper">
 
-      <h1 className="hero-h1">KOLOR SYSTEM</h1>
-      <h3 className="hero-h3">Malowanie wnętrz</h3>
-     
-     <img className="hero-brush" src={brush} />
-
-
-     <img className="hero-brush brush1" src={brush} />
    
-      {/* <Helmet>
+      <Helmet>
   <link rel="preload" as="image" href={headerM} />
-</Helmet> */}
+</Helmet>
       <div className="header d-block d-lg-none">
         <NavBarNavConst />
       </div>
@@ -53,7 +46,7 @@ const Headers = () => {
       <div>
         <NavbarWebConst />
       </div>
-        {/* <img
+        <img
         className="header-img d-block d-lg-none"
         src={headerM}
         alt="header-m"
@@ -71,11 +64,11 @@ const Headers = () => {
       <img 
       className=" header-img d-none d-xl-block"
       src={headerXXL}
-      alt="header-xxl"
+      alt="header-xxl"  
        fetchpriority="auto"
               loading="eager"
              
-      /> */}
+      />
 
 <motion.button
   className="order-header-btn"
