@@ -337,6 +337,17 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   display: block;
   overflow-y: hidden;
 }
+.hero-brush{
+  position: absolute;
+  top: 10%; left: 70%;
+  height: 100px;width: 100px;
+  filter:
+  sepia(0.6)           /* nadaje ciepły ton */
+  saturate(1.8)        /* podbija kolor */
+  brightness(0.95)     /* lekko przyciemnia */
+  contrast(1.1)        /* pogłębia kontrasty */
+  hue-rotate(-10deg);
+}
 
 .estimate-img-shadow, .picture-img-shadow, .contact-us-shadow ,.header-shadow {
   bottom: 0;
@@ -877,8 +888,8 @@ p:last-child{
 }
 @media(min-width: 1000px){
   .header-img{
-    
-    height: 100vh;
+    margin-top: -50px;
+    height: 105vh;
   }
   .order-header-btn{
     top: 82%;
@@ -887,8 +898,8 @@ p:last-child{
 @media(min-width:1200px){
 
   .header-img{
-    margin-top: -80px;
-    height: 120vh;
+    margin-top:-56px;
+    height: 110vh;
   }
   .order-header-btn{
     top: 82%;

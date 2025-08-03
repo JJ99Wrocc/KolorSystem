@@ -34,11 +34,37 @@ const Headers = () => {
 
   return (
     <div className="wrapper hero-wrapper">
-
-   
-      <Helmet>
-  <link rel="preload" as="image" href={headerM} />
+<Helmet>
+  <link
+    rel="preload"
+    as="image"
+    href={headerM}
+    type="image/webp"
+    fetchpriority="high"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href={headerXL}
+    type="image/webp"
+    fetchpriority="high"
+  />
+  <link
+    rel="preload"
+    as="image"
+    href={headerXXL}
+    type="image/webp"
+    fetchpriority="high"
+  />
 </Helmet>
+
+     
+     <img className="hero-brush" src={brush} />
+
+
+     <img className="hero-brush brush1" src={brush} />
+   
+
       <div className="header d-block d-lg-none">
         <NavBarNavConst />
       </div>
