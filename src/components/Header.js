@@ -71,7 +71,7 @@ const Headers = () => {
           alt="header image"
           fetchpriority="high"
           loading="eager"
-          style={{ width: "100%", height: "auto" }}
+    
         />
       </picture>
 

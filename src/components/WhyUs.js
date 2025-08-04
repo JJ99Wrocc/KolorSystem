@@ -62,6 +62,8 @@ const WhyUs = () => {
                   className="why-us-icons"
                   src={item.img}
                   alt={item.alt}
+                    width="50"
+                    height="50"
                 />
               </span>
               <div className="why-us-titles">{item.title}</div>
