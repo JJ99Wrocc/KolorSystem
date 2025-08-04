@@ -329,10 +329,7 @@ button.e.navbar-toggler.collapsed, .navbar-toggler.collapsed{
   background-size: cover;
   object-position: center;
 }
-element.style {
-  width: 100%;
-  height: 100vh;
-}
+
 .hero-wrapper{
   aspect-ratio: 16 / 9;
   object-fit: contain;

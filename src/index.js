@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'swiper/css';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration.js/serviceWorkerRegistration';
+// import * as serviceWorkerRegistration from './serviceWorkerRegistration.js/serviceWorkerRegistration';
 
 
 
