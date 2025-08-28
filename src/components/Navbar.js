@@ -33,7 +33,6 @@ function NavbarWeb() {
   return (
     <Navbar
       fixed="top"
-      
       data-bs-theme="light"
       className={`d-none d-lg-block navbar-web container-fluid ${
         location.pathname === "/" ? (isVisible ? "visible" : "") : "always-visible"
